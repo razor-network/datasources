@@ -1,0 +1,50 @@
+[
+  {
+    "weight": "-",
+    "power": 2,
+    "selectorType": 0,
+    "name": "ethusd_gemini",
+    "selector": "last",
+    "url": "https://api.gemini.com/v1/pubticker/ethusd"
+  },
+  {
+    "weight": "-",
+    "power": 2,
+    "selectorType": 0,
+    "name": "ethusd_kucoin",
+    "selector": "data.ETH",
+    "url": "https://api.kucoin.com/api/v1/prices\\?base\\=USD\\&currencies\\=ETH"
+  },
+  {
+    "weight": "-",
+    "power": 2,
+    "selectorType": 0,
+    "name": "ethusd_kraken",
+    "selector": "result.XETHZUSD.c[0]",
+    "url": "https://api.kraken.com/0/public/Ticker\\?pair\\=ETHUSD"
+  },
+  {
+    "weight": "-",
+    "power": 2,
+    "selectorType": 0,
+    "name": "btcusd_kucoin",
+    "selector": "data.BTC",
+    "url": "https://api.kucoin.com/api/v1/prices?\\base\\=USD\\&currencies\\=BTC"
+  },
+  {
+    "weight": "-",
+    "power": 2,
+    "selectorType": 0,
+    "name": "btcusd_gemini",
+    "selector": "last",
+    "url": "https://api.gemini.com/v1/pubticker/btcusd"
+  },
+  {
+    "weight": "-",
+    "power": 2,
+    "selectorType": 0,
+    "name": "btcusd_kraken",
+    "selector": "result.XXBTZUSD.c[0]",
+    "url": "https://api.kraken.com/0/public/Ticker?pair=BTCUSD"
+  }
+]
