@@ -1,0 +1,14 @@
+[
+  {
+    "jobIDs": "1,2,3",
+    "aggregationMethod": 2,
+    "power": 2,
+    "name": "ethCollectionMean"
+  },
+  {
+    "jobIDs": "5,6,7",
+    "aggregationMethod": 2,
+    "power": 2,
+    "name": "btcCollectionMean"
+  }
+]
