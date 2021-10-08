@@ -1,6 +1,6 @@
 [
   {
-    "weight": "-",
+    "weight": 1,
     "power": 2,
     "selectorType": 0,
     "name": "ethusd_gemini",
@@ -8,7 +8,7 @@
     "url": "https://api.gemini.com/v1/pubticker/ethusd"
   },
   {
-    "weight": "-",
+    "weight": 1,
     "power": 2,
     "selectorType": 0,
     "name": "ethusd_kucoin",
@@ -16,7 +16,7 @@
     "url": "https://api.kucoin.com/api/v1/prices\\?base\\=USD\\&currencies\\=ETH"
   },
   {
-    "weight": "-",
+    "weight": 1,
     "power": 2,
     "selectorType": 0,
     "name": "ethusd_kraken",
@@ -24,7 +24,7 @@
     "url": "https://api.kraken.com/0/public/Ticker\\?pair\\=ETHUSD"
   },
   {
-    "weight": "-",
+    "weight": 1,
     "power": 2,
     "selectorType": 0,
     "name": "btcusd_kucoin",
@@ -32,7 +32,7 @@
     "url": "https://api.kucoin.com/api/v1/prices?\\base\\=USD\\&currencies\\=BTC"
   },
   {
-    "weight": "-",
+    "weight": 1,
     "power": 2,
     "selectorType": 0,
     "name": "btcusd_gemini",
@@ -40,7 +40,7 @@
     "url": "https://api.gemini.com/v1/pubticker/btcusd"
   },
   {
-    "weight": "-",
+    "weight": 1,
     "power": 2,
     "selectorType": 0,
     "name": "btcusd_kraken",
