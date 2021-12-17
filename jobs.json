@@ -13,7 +13,7 @@
     "selectorType": 0,
     "name": "ethusd_kucoin",
     "selector": "data.ETH",
-    "url": "https://api.kucoin.com/api/v1/prices\\?base\\=USD\\&currencies\\=ETH"
+    "url": "https://api.kucoin.com/api/v1/prices?base=USD&currencies=ETH"
   },
   {
     "weight": 1,
@@ -21,7 +21,7 @@
     "selectorType": 0,
     "name": "ethusd_kraken",
     "selector": "result.XETHZUSD.c[0]",
-    "url": "https://api.kraken.com/0/public/Ticker\\?pair\\=ETHUSD"
+    "url": "https://api.kraken.com/0/public/Ticker?pair=ETHUSD"
   },
   {
     "weight": 1,
@@ -29,7 +29,7 @@
     "selectorType": 0,
     "name": "btcusd_kucoin",
     "selector": "data.BTC",
-    "url": "https://api.kucoin.com/api/v1/prices?\\base\\=USD\\&currencies\\=BTC"
+    "url": "https://api.kucoin.com/api/v1/prices?base=USD&currencies=BTC"
   },
   {
     "weight": 1,
