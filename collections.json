@@ -12,5 +12,12 @@
     "power": 2,
     "name": "btcCollectionMean",
     "tolerance": 200
+  },
+  {
+    "jobIDs": [7, 8, 9],
+    "aggregationMethod": 2,
+    "power": 2,
+    "name": "goldusd_mean",
+    "tolerance": 200
   }
 ]

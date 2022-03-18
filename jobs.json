@@ -46,5 +46,29 @@
     "name": "btcusd_kraken",
     "selector": "result.XXBTZUSD.c[0]",
     "url": "https://api.kraken.com/0/public/Ticker?pair=BTCUSD"
+  },
+  {
+    "weight": 1,
+    "power": 2,
+    "selectorType": 1,
+    "name": "goldusd_kitko",
+    "selector": "/html/body/main/div/div/div/div[1]/div/div[1]/div[2]/div/div[2]/table/tbody/tr[2]/td[2]",
+    "url": "https://www.kitco.com/gold-price-today-usa/"
+  },
+  {
+    "weight": 1,
+    "power": 2,
+    "selectorType": 1,
+    "name": "goldusd_goldbroker",
+    "selector": "/html/body/div[3]/header/div[4]/div[2]/div/div[1]/span",
+    "url": "https://goldbroker.com/charts/gold-price/usd"
+  },
+  {
+    "weight": 1,
+    "power": 2,
+    "selectorType": 1,
+    "name": "goldusd_apmex",
+    "selector": "/html/body/header/div[1]/div/ul/li[1]/a/div[2]/span[1]",
+    "url": "https://www.apmex.com/gold-price"
   }
 ]
