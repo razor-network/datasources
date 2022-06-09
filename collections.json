@@ -19,5 +19,12 @@
     "power": 2,
     "name": "goldusd_mean",
     "tolerance": 200
+  },
+  {
+    "jobIDs": [10, 11, 12],
+    "aggregationMethod": 1,
+    "power": 5,
+    "name": "dogeusd_median",
+    "tolerance": 500000
   }
 ]

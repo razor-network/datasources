@@ -70,5 +70,29 @@
     "name": "goldusd_apmex",
     "selector": "/html/body/header/div[1]/div/ul/li[1]/a/div[2]/span[1]",
     "url": "https://www.apmex.com/gold-price"
+  },
+  {
+    "weight": 1,
+    "power": 5,
+    "selectorType": 0,
+    "name": "dogeusd_kucoin",
+    "selector": "data.DOGE",
+    "url": "https://api.kucoin.com/api/v1/prices?base=USD&currencies=DOGE"
+  },
+  {
+    "weight": 1,
+    "power": 5,
+    "selectorType": 0,
+    "name": "dogeusd_gemini",
+    "selector": "last",
+    "url": "https://api.gemini.com/v1/pubticker/dogeusd"
+  },
+  {
+    "weight": 1,
+    "power": 5,
+    "selectorType": 0,
+    "name": "dogeusd_kraken",
+    "selector": "result.XDGUSD.c[0]",
+    "url": "https://api.kraken.com/0/public/Ticker?pair=DOGEUSD"
   }
 ]
