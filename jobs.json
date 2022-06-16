@@ -91,7 +91,7 @@
     "weight": 1,
     "power": 2,
     "selectorType": 1,
-    "name": "ethusd_kraken",
+    "name": "grtusd_cmc",
     "selector": "/html/body/div[1]/div[1]/div[1]/div[2]/div/div[1]/div[3]/div/div[2]/div[1]/div/span",
     "url": "https://coinmarketcap.com/currencies/the-graph/"
   }
