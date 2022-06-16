@@ -70,5 +70,29 @@
     "name": "goldusd_apmex",
     "selector": "/html/body/header/div[1]/div/ul/li[1]/a/div[2]/span[1]",
     "url": "https://www.apmex.com/gold-price"
+  },
+  {
+    "weight": 1,
+    "power": 2,
+    "selectorType": 0,
+    "name": "grtusd_gemini",
+    "selector": "last",
+    "url": "https://api.gemini.com/v1/pubticker/grtusd"
+  },
+  {
+    "weight": 1,
+    "power": 2,
+    "selectorType": 0,
+    "name": "grtusd_kucoin",
+    "selector": "data.GRT",
+    "url": "https://api.kucoin.com/api/v1/prices?base=USD&currencies=GRT"
+  },
+  {
+    "weight": 1,
+    "power": 2,
+    "selectorType": 1,
+    "name": "ethusd_kraken",
+    "selector": "/html/body/div[1]/div[1]/div[1]/div[2]/div/div[1]/div[3]/div/div[2]/div[1]/div/span",
+    "url": "https://coinmarketcap.com/currencies/the-graph/"
   }
 ]
