@@ -107,7 +107,7 @@
     "weight": 1,
     "power": 5,
     "selectorType": 0,
-    "name": "dogeusd_gemini",
+    "name": "sklusd_gemini",
     "selector": "last",
     "url": "https://api.gemini.com/v1/pubticker/sklusd"
   },
@@ -115,7 +115,7 @@
     "weight": 1,
     "power": 5,
     "selectorType": 0,
-    "name": "dogeusd_kraken",
+    "name": "sklusd_coinbase",
     "selector": "data.amount",
     "url": "https://api.coinbase.com/v2/prices/SKL-USD/spot"
   }
