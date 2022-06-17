@@ -94,5 +94,29 @@
     "name": "dogeusd_kraken",
     "selector": "result.XDGUSD.c[0]",
     "url": "https://api.kraken.com/0/public/Ticker?pair=DOGEUSD"
+  },
+  {
+    "weight": 1,
+    "power": 5,
+    "selectorType": 0,
+    "name": "sklusd_kucoin",
+    "selector": "data.SKL",
+    "url": "https://api.kucoin.com/api/v1/prices?base=USD&currencies=SKL"
+  },
+  {
+    "weight": 1,
+    "power": 5,
+    "selectorType": 0,
+    "name": "dogeusd_gemini",
+    "selector": "last",
+    "url": "https://api.gemini.com/v1/pubticker/sklusd"
+  },
+  {
+    "weight": 1,
+    "power": 5,
+    "selectorType": 0,
+    "name": "dogeusd_kraken",
+    "selector": "data.amount",
+    "url": "https://api.coinbase.com/v2/prices/SKL-USD/spot"
   }
 ]
