@@ -26,6 +26,22 @@
   {
     "weight": 1,
     "power": 2,
+    "selectorType": 1,
+    "name": "ethusd_coingecko",
+    "selector": "/html/body/div[5]/div[4]/div[1]/div/div[1]/div[3]/div/div[1]/span[1]/span",
+    "url": "https://www.coingecko.com/en/coins/ethereum"
+  },
+  {
+    "weight": 1,
+    "power": 2,
+    "selectorType": 1,
+    "name": "ethusd_binance",
+    "selector": "/html/body/div[1]/div/main/section/div/div[3]/div[2]/div[1]/div[1]",
+    "url": "https://www.binance.com/en-IN/price/ethereum"
+  },
+  {
+    "weight": 1,
+    "power": 2,
     "selectorType": 0,
     "name": "btcusd_kucoin",
     "selector": "data.BTC",
@@ -51,6 +67,22 @@
     "weight": 1,
     "power": 2,
     "selectorType": 1,
+    "name": "btcusd_coingecko",
+    "selector": "/html/body/div[5]/div[4]/div[1]/div/div[1]/div[3]/div/div[1]/span[1]/span",
+    "url": "https://www.coingecko.com/en/coins/bitcoin"
+  },
+  {
+    "weight": 1,
+    "power": 2,
+    "selectorType": 1,
+    "name": "btcusd_binance",
+    "selector": "/html/body/div[1]/div/main/section/div/div[3]/div[2]/div[1]/div[1]",
+    "url": "https://www.binance.com/en-IN/price/bitcoin"
+  },
+  {
+    "weight": 1,
+    "power": 2,
+    "selectorType": 1,
     "name": "goldusd_kitko",
     "selector": "/html/body/main/div/div/div/div[1]/div/div[1]/div[2]/div/div[2]/table/tbody/tr[2]/td[2]",
     "url": "https://www.kitco.com/gold-price-today-usa/"
@@ -60,7 +92,7 @@
     "power": 2,
     "selectorType": 1,
     "name": "goldusd_goldbroker",
-    "selector": "/html/body/div[3]/header/div[4]/div[1]/div[2]/div/div[1]/span",
+    "selector": "/html/body/header[1]/nav/div/div[1]/a[1]/span[2]",
     "url": "https://goldbroker.com/charts/gold-price/usd"
   },
   {
@@ -70,6 +102,22 @@
     "name": "goldusd_apmex",
     "selector": "/html/body/header/div[1]/div/ul/li[1]/a/div[2]/span[1]",
     "url": "https://www.apmex.com/gold-price"
+  },
+  {
+    "weight": 1,
+    "power": 2,
+    "selectorType": 1   ,
+    "name": "goldusd_monex",
+    "selector": "/html/body/div[1]/main/div/div/section[1]/div/div/div[1]/div/div[2]/span",
+    "url": "https://www.monex.com/gold-prices/"
+  },
+  {
+    "weight": 1,
+    "power": 2,
+    "selectorType": 1   ,
+    "name": "goldusd_onegold",
+    "selector": "/html/body/main/section[1]/div/div/div/div[2]/div/div/table/tbody/tr[1]/td[2]/span",
+    "url": "https://www.onegold.com/live-gold-price"
   },
   {
     "weight": 1,
@@ -98,6 +146,22 @@
   {
     "weight": 1,
     "power": 5,
+    "selectorType": 1,
+    "name": "dogeusd_coingecko",
+    "selector": "/html/body/div[5]/div[4]/div[1]/div/div[1]/div[3]/div/div[1]/span[1]/span",
+    "url": "https://www.coingecko.com/en/coins/dogecoin"
+  },
+  {
+    "weight": 1,
+    "power": 5,
+    "selectorType": 1,
+    "name": "dogeusd_binance",
+    "selector": "/html/body/div[1]/div/main/section/div/div[3]/div[2]/div[1]/div[1]",
+    "url": "https://www.binance.com/en-IN/price/dogecoin"
+  },
+  {
+    "weight": 1,
+    "power": 5,
     "selectorType": 0,
     "name": "sklusd_kucoin",
     "selector": "data.SKL",
@@ -118,5 +182,21 @@
     "name": "sklusd_coinbase",
     "selector": "data.amount",
     "url": "https://api.coinbase.com/v2/prices/SKL-USD/spot"
+  },
+  {
+    "weight": 1,
+    "power": 5,
+    "selectorType": 1,
+    "name": "sklusd_coingecko",
+    "selector": "/html/body/div[5]/div[4]/div[1]/div/div[1]/div[3]/div/div[1]/span[1]/span",
+    "url": "https://www.coingecko.com/en/coins/skale"
+  },
+  {
+    "weight": 1,
+    "power": 5,
+    "selectorType": 1,
+    "name": "sklusd_binance",
+    "selector": "/html/body/div[1]/div/main/section/div/div[3]/div[2]/div[1]/div[1]",
+    "url": "https://www.binance.com/en-IN/price/skale-network"
   }
 ]
