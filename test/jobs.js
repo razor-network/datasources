@@ -7,6 +7,7 @@ const axios = require("axios").default;
 const jsdom = require("jsdom");
 
 chai.use(chaiHttp);
+
 const { expect } = chai;
 const { JSDOM } = jsdom;
 
@@ -56,7 +57,7 @@ describe("Jobs test", () => {
     );
   });
 
-  it("Job selector should be present in URL response", async () => {
+  it("JSON jobs should have required selector", async () => {
     await Promise.all(
       jobsData.map(async (job, index) => {
         const { selectorType, url, name, selector } = job;
@@ -69,12 +70,24 @@ describe("Jobs test", () => {
             false,
             `Job[${name}] does not have required selector`
           );
-        } else if (selectorType === 1) {
+        }
+      })
+    );
+  });
+
+  it("XHTML jobs should have required selector", async () => {
+    await Promise.all(
+      jobsData.map(async (job, index) => {
+        const { selectorType, url, name, selector } = job;
+
+        // XHTML
+        if (selectorType === 1) {
           const res = await axios.get(url, {
             headers: {
               "Content-Type": "application/xml; charset=utf-8",
             },
           });
+
           const dom = new JSDOM(res.data);
           const parser = new dom.window.DOMParser();
           const doc = parser.parseFromString(res.data, "text/html");
@@ -86,12 +99,11 @@ describe("Jobs test", () => {
             null
           ).singleNodeValue;
 
-          console.log("selector");
-          console.log(selector);
-          console.log("result");
-          console.log(result);
-          console.log("result data");
-          console.log(result.textContent);
+          const trimResult = result.textContent.replace(/[, $]+/g, "");
+          expect(isNaN(trimResult)).to.be.eq(
+            false,
+            `Job[${name}] does not have required selector`
+          );
         }
       })
     );
