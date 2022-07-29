@@ -60,7 +60,7 @@
     "power": 2,
     "selectorType": 1,
     "name": "goldusd_goldbroker",
-    "selector": "/html/body/div[3]/header/div[4]/div[1]/div[2]/div/div[1]/span",
+    "selector": "/html/body/header[1]/nav/div/div[1]/a[1]/span[2]",
     "url": "https://goldbroker.com/charts/gold-price/usd"
   },
   {
