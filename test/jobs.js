@@ -99,10 +99,17 @@ describe("Jobs test", () => {
             null
           ).singleNodeValue;
 
-          const trimResult = result.textContent.replace(/[, $]+/g, "");
+          expect(result).to.not.equal(
+            null,
+            `Job[${name}] result content is null`
+          );
+
+          const trimResult = result
+            ? result.textContent.replace(/[, $]+/g, "")
+            : undefined;
           expect(isNaN(trimResult)).to.be.eq(
             false,
-            `Job[${name}] does not have required selector`
+            `Job[${name}] does not have numeric result`
           );
         }
       })
