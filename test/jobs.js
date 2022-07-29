@@ -4,7 +4,6 @@ const chai = require("chai");
 const chaiHttp = require("chai-http");
 const _ = require("lodash");
 const axios = require("axios").default;
-const DOMParser = require("dom-parser");
 const jsdom = require("jsdom");
 
 chai.use(chaiHttp);
@@ -76,9 +75,9 @@ describe("Jobs test", () => {
               "Content-Type": "application/xml; charset=utf-8",
             },
           });
-          const parser = new DOMParser();
-          const doc = parser.parseFromString(res.data, "text/html");
           const dom = new JSDOM(res.data);
+          const parser = new dom.window.DOMParser();
+          const doc = parser.parseFromString(res.data, "text/html");
           const result = dom.window.document.evaluate(
             selector,
             doc,
@@ -87,7 +86,12 @@ describe("Jobs test", () => {
             null
           ).singleNodeValue;
 
+          console.log("selector");
+          console.log(selector);
+          console.log("result");
           console.log(result);
+          console.log("result data");
+          console.log(result.textContent);
         }
       })
     );
