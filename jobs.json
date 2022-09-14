@@ -46,5 +46,13 @@
     "name": "ethusd_coinbase",
     "selector": "data.amount",
     "url": "https://api.coinbase.com/v2/prices/ETH-USD/spot"
+  },
+  {
+    "weight": 1,
+    "power": 2,
+    "selectorType": 0,
+    "name": "ethusd_coingecko_api",
+    "selector": "ethereum.usd",
+    "url": "https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd"
   }
 ]
