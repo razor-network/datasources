@@ -34,10 +34,10 @@
   {
     "weight": 1,
     "power": 2,
-    "selectorType": 1,
+    "selectorType": 0,
     "name": "ethusd_binance",
-    "selector": "/html/body/div[1]/div/main/section/div/div[3]/div[2]/div[1]/div[1]",
-    "url": "https://www.binance.com/en-IN/price/ethereum"
+    "selector": "price",
+    "url": "https://api.binance.com/api/v3/avgPrice?symbol=ETHUSDC"
   },
   {
     "weight": 1,
