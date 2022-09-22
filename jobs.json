@@ -62,5 +62,21 @@
     "name": "ethusd_ftx",
     "selector": "result.price",
     "url": "https://ftx.com/api/markets/ETH/USD"
+  },
+  {
+    "weight": 1,
+    "power": 2,
+    "selectorType": 0,
+    "name": "ethusd_bitfinex",
+    "selector": "[0]",
+    "url": "https://api-pub.bitfinex.com/v2/ticker/tETHUSD"
+  },
+  {
+    "weight": 1,
+    "power": 2,
+    "selectorType": 0,
+    "name": "ethusd_cryptocompare",
+    "selector": "[USD]",
+    "url": "https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=USD"
   }
 ]
