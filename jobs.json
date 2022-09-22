@@ -54,5 +54,13 @@
     "name": "ethusd_coingecko_api",
     "selector": "ethereum.usd",
     "url": "https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd"
+  },
+  {
+    "weight": 1,
+    "power": 2,
+    "selectorType": 0,
+    "name": "ethusd_ftx",
+    "selector": "result.price",
+    "url": "https://ftx.com/api/markets/ETH/USD"
   }
 ]
