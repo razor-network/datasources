@@ -5,5 +5,19 @@
     "power": 2,
     "name": "ethCollectionMedian",
     "tolerance": 500000
+  },
+  {
+    "jobIDs": [12, 13, 14, 15],
+    "aggregationMethod": 2,
+    "power": 2,
+    "name": "goldusd",
+    "tolerance": 500000
+  },
+  {
+    "jobIDs": [16, 17, 18, 19],
+    "aggregationMethod": 2,
+    "power": 2,
+    "name": "silverusd",
+    "tolerance": 500000
   }
 ]
