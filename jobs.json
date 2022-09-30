@@ -78,13 +78,5 @@
     "name": "ethusd_cryptocompare",
     "selector": "[USD]",
     "url": "https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=USD"
-  },
-  {
-    "weight": 1,
-    "power": 2,
-    "selectorType": 0,
-    "name": "ethusd_diadata",
-    "selector": "[Price]",
-    "url": "https://api.diadata.org/v1/assetQuotation/Ethereum/0x0000000000000000000000000000000000000000"
   }
 ]
