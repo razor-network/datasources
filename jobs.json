@@ -78,5 +78,13 @@
     "name": "ethusd_cryptocompare",
     "selector": "[USD]",
     "url": "https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=USD"
+  },
+  {
+    "weight": 1,
+    "power": 2,
+    "selectorType": 0,
+    "name": "ethusd_bitmart",
+    "selector": "data[tickers[0][last_price]]",
+    "url": "https://api-cloud.bitmart.com/spot/v1/ticker?symbol=ETH_USDC"
   }
 ]
