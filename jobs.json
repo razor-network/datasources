@@ -86,5 +86,29 @@
     "name": "ethusd_bitmart",
     "selector": "data[tickers[0][last_price]]",
     "url": "https://api-cloud.bitmart.com/spot/v1/ticker?symbol=ETH_USDC"
+  },
+  {
+    "weight": 1,
+    "power": 2,
+    "selectorType": 0,
+    "name": "razorusd_cryptocompare",
+    "selector": "[USD]",
+    "url": "https://min-api.cryptocompare.com/data/price?fsym=RAZOR&tsyms=USD"
+  },
+  {
+    "weight": 1,
+    "power": 2,
+    "selectorType": 0,
+    "name": "razorusd_mexc",
+    "selector": "data[0][last]",
+    "url": "https://www.mexc.com/open/api/v2/market/ticker?symbol=RAZOR_USDT"
+  },
+  {
+    "weight": 1,
+    "power": 2,
+    "selectorType": 0,
+    "name": "razorusd_gateio",
+    "selector": "[0].last",
+    "url": "https://api.gateio.ws/api/v4/spot/tickers?currency_pair=RAZOR_USDT"
   }
 ]

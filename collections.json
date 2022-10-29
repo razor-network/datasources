@@ -5,5 +5,12 @@
     "power": 2,
     "name": "ethCollectionMedian",
     "tolerance": 500000
+  },
+  {
+    "jobIDs": [12, 13, 14],
+    "aggregationMethod": 2,
+    "power": 2,
+    "name": "razorCollection",
+    "tolerance": 500000
   }
 ]
