@@ -12,5 +12,12 @@
     "power": 2,
     "name": "razorCollection",
     "tolerance": 500000
+  },
+  {
+    "jobIDs": [15, 16, 17, 18],
+    "aggregationMethod": 2,
+    "power": 2,
+    "name": "UniLendFinanceCollection",
+    "tolerance": 500000
   }
 ]
