@@ -37,7 +37,7 @@
     "selectorType": 0,
     "name": "ethusd_binance",
     "selector": "price",
-    "url": "https://api.binance.com/api/v3/avgPrice?symbol=ETHUSDC"
+    "url": "https://api.binance.com/api/v3/avgPrice?symbol=ETHBUSD"
   },
   {
     "weight": 1,
