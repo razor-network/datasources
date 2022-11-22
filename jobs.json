@@ -37,7 +37,7 @@
     "selectorType": 0,
     "name": "ethusd_binance",
     "selector": "price",
-    "url": "https://api.binance.com/api/v3/avgPrice?symbol=ETHUSDC"
+    "url": "https://api.binance.com/api/v3/avgPrice?symbol=ETHBUSD"
   },
   {
     "weight": 1,
@@ -54,14 +54,6 @@
     "name": "ethusd_coingecko_api",
     "selector": "ethereum.usd",
     "url": "https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd"
-  },
-  {
-    "weight": 1,
-    "power": 2,
-    "selectorType": 0,
-    "name": "ethusd_ftx",
-    "selector": "result.price",
-    "url": "https://ftx.com/api/markets/ETH/USD"
   },
   {
     "weight": 1,

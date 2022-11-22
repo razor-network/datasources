@@ -1,23 +1,23 @@
 [
   {
-    "jobIDs": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+    "jobIDs": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
     "aggregationMethod": 2,
     "power": 2,
     "name": "ethCollectionMedian",
     "tolerance": 500000
   },
   {
-    "jobIDs": [12, 13, 14],
+    "jobIDs": [11, 12, 13],
     "aggregationMethod": 2,
     "power": 2,
-    "name": "razorCollection",
+    "name": "RAZORUSD",
     "tolerance": 500000
   },
   {
-    "jobIDs": [15, 16, 17, 18],
+    "jobIDs": [14, 15, 16, 17],
     "aggregationMethod": 2,
     "power": 2,
-    "name": "UniLendFinanceCollection",
+    "name": "UFTUSD",
     "tolerance": 500000
   }
 ]
