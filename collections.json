@@ -1,9 +1,23 @@
 [
   {
-    "jobIDs": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    "jobIDs": [1, 2, 3, 4, 5, 6, 7, 8, 9],
     "aggregationMethod": 2,
     "power": 2,
     "name": "ethCollectionMedian",
+    "tolerance": 500000
+  },
+  {
+    "jobIDs": [10, 11, 12],
+    "aggregationMethod": 2,
+    "power": 2,
+    "name": "RAZORUSD",
+    "tolerance": 500000
+  },
+  {
+    "jobIDs": [13, 14, 15, 16],
+    "aggregationMethod": 2,
+    "power": 2,
+    "name": "UFTUSD",
     "tolerance": 500000
   }
 ]
