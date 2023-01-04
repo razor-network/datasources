@@ -18,7 +18,7 @@ jobs:
           name: "Install"
           command: npm i 
       - run:
-          name: "Install"
+          name: "Test"
           command: npm test 
 
 # Invoke jobs via workflows
