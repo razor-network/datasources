@@ -16,7 +16,7 @@ Please mark the options that apply to this PR.
 
 - [ ] New job
 - [ ] New collection
-- [ ] API is valid
+- [ ] API is valid, example API response: 
 - [ ] This change requires a documentation update
 
 ## Checklist:
