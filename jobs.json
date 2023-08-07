@@ -27,9 +27,9 @@
     "weight": 1,
     "power": 2,
     "selectorType": 1,
-    "name": "ethusd_coingecko",
-    "selector": "/html/body/div[5]/div[5]/div[1]/div/div[1]/div[3]/div/div[1]/span[1]/span",
-    "url": "https://www.coingecko.com/en/coins/ethereum"
+    "name": "ethusd_coinmarketcap",
+    "selector": "/html/body/div[1]/div[2]/div[1]/div[2]/div/div[1]/div[4]/table/tbody/tr[2]/td[4]/div/a/span",
+    "url": "https://coinmarketcap.com/"
   },
   {
     "weight": 1,
