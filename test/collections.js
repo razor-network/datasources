@@ -82,9 +82,7 @@ describe("Collections test", () => {
     it("Collection JSON jobIDs should have required selectors ", async () => {
         await Promise.all(
             collectionsData.map(async (col) => {
-                const {
-                    jobIDs
-                } = col;
+                const { jobIDs } = col;
                 jobIDs.every(async (ele) => {
                     const {
                         url,
@@ -113,9 +111,7 @@ describe("Collections test", () => {
     it("Collection XHTML jobIDs should have required selectors ", async () => {
         await Promise.all(
             collectionsData.map(async (col) => {
-                const {
-                    jobIDs
-                } = col;
+                const { jobIDs } = col;
                 jobIDs.every(async (ele) => {
                     const {
                         url,
