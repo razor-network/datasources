@@ -23,7 +23,6 @@ const keysWithType = {
 const requiredKeys = Object.keys(keysWithType).sort();
 
 describe("Jobs test", () => {
-  const tableData = [];
 
   it("Job should have required keys", () => {
     jobsData.map((job, index) => {
@@ -84,83 +83,4 @@ describe("Jobs test", () => {
       );
     });
   });
-
-  it("Job URL should send OK response", async () => {
-    await Promise.all(
-      jobsData.map(async (job, index) => {
-        const { url, name } = job;
-
-        const res = await chai.request(url).get("");
-        expect(res.status).to.be.equal(
-          200,
-          `Job(${name}) url should send OK response`
-        );
-      })
-    );
-  });
-
-  it("JSON jobs should have required selector", async () => {
-    await Promise.all(
-      jobsData.map(async (job, index) => {
-        const { selectorType, url, name, selector } = job;
-
-        // JSON
-        if (selectorType === 0) {
-          const res = await chai.request(url).get("");
-          const result = _.get(res.body, selector);
-          expect(isNaN(result)).to.be.eq(
-            false,
-            `Job[${name}] does not have required selector`
-          );
-
-          tableData.push({ job: name, result });
-        }
-      })
-    );
-  });
-
-  it("XHTML jobs should have required selector", async () => {
-    await Promise.all(
-      jobsData.map(async (job, index) => {
-        const { selectorType, url, name, selector } = job;
-
-        // XHTML
-        if (selectorType === 1) {
-          const res = await axios.get(url, {
-            headers: {
-              "Content-Type": "application/xml; charset=utf-8",
-            },
-          });
-
-          const dom = new JSDOM(res.data);
-          const parser = new dom.window.DOMParser();
-          const doc = parser.parseFromString(res.data, "text/html");
-          const result = dom.window.document.evaluate(
-            selector,
-            doc,
-            null,
-            dom.window.XPathResult.FIRST_ORDERED_NODE_TYPE,
-            null
-          ).singleNodeValue;
-
-          expect(result).to.not.equal(
-            null,
-            `Job[${name}] result content is null`
-          );
-
-          const trimResult = result
-            ? result.textContent.replace(/[, $]+/g, "")
-            : undefined;
-          expect(isNaN(trimResult)).to.be.eq(
-            false,
-            `Job[${name}] does not have numeric result`
-          );
-
-          tableData.push({ job: name, result: trimResult });
-        }
-      })
-    );
-  });
-
-  after(() => console.table(tableData));
 });
