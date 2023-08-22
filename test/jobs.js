@@ -1,5 +1,5 @@
 //! Replace jobsData.json -> jobs.json before merging to master
-const jobsData = require("../jobs.json");
+const jobsData = require("../mainnet/jobs.json");
 const chai = require("chai");
 const chaiHttp = require("chai-http");
 const _ = require("lodash");
