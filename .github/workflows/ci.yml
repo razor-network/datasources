@@ -1,15 +1,13 @@
 name: CI
 
 on:
-  workflow_dispatch:
   push:
-    branches: [ "master" ]
-  pull_request_target:
-    branches: [ "master" ]
+    branches:
+      - '**'
 
 jobs:
   tests:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     strategy:
       matrix:
