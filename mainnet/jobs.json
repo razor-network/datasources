@@ -78,5 +78,61 @@
     "name": "ethusd_cryptocompare",
     "selector": "[USD]",
     "url": "https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=USD"
+  },
+  {
+    "weight": 1,
+    "power": 5,
+    "selectorType": 0,
+    "name": "xrpusd_bitstamp",
+    "selector": "last",
+    "url": "https://www.bitstamp.net/api/v2/ticker/xrpusd/"
+  },
+  {
+    "weight": 1,
+    "power": 5,
+    "selectorType": 0,
+    "name": "xrpusd_kraken",
+    "selector": "result.XXRPZUSD.c[0]",
+    "url": "https://api.kraken.com/0/public/Ticker?pair=XRPUSD"
+  },
+  {
+    "weight": 1,
+    "power": 5,
+    "selectorType": 0,
+    "name": "xrpusd_kukoin",
+    "selector": "data.XRP",
+    "url": "https://api.kucoin.com/api/v1/prices?base=USD&currencies=XRP"
+  },
+  {
+    "weight": 1,
+    "power": 5,
+    "selectorType": 0,
+    "name": "xrpusd_coincap",
+    "selector": "data.priceUsd",
+    "url": "https://api.coincap.io/v2/assets/xrp"
+  },
+  {
+    "weight": 1,
+    "power": 5,
+    "selectorType": 0,
+    "name": "xrpbusd_binance",
+    "selector": "price",
+    "url": "https://api.binance.com/api/v3/avgPrice?symbol=XRPBUSD"
+  },
+  {
+    "weight": 1,
+    "power": 5,
+    "selectorType": 0,
+    "name": "xrpusd_coinbase",
+    "selector": "data.amount",
+    "url": "https://api.coinbase.com/v2/prices/XRP-USD/spot"
+  },
+  {
+    "weight": 1,
+    "power": 5,
+    "selectorType": 0,
+    "name": "xrpusd_mobula",
+    "selector": "data.price",
+    "url": "https://api.app-mobula.com/api/1/market/data?asset=xrp"
   }
 ]
