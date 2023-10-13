@@ -107,14 +107,6 @@
     "weight": 1,
     "power": 2,
     "selectorType": 0,
-    "name": "sklusd_binance",
-    "selector": "price",
-    "url": "https://api.binance.com/api/v3/avgPrice?symbol=SKLBUSD"
-  },
-  {
-    "weight": 1,
-    "power": 2,
-    "selectorType": 0,
     "name": "sklusd_coinbase",
     "selector": "data.amount",
     "url": "https://api.coinbase.com/v2/prices/SKL-USD/spot"

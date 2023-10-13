@@ -7,7 +7,7 @@
     "tolerance": 500000
   },
   {
-    "jobIDs": [11, 12, 13, 14, 15, 16, 17],
+    "jobIDs": [11, 12, 13, 14, 15, 16],
     "aggregationMethod": 2,
     "power": 2,
     "name": "SKLUSD",
