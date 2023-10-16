@@ -98,14 +98,6 @@
   {
     "weight": 1,
     "power": 2,
-    "selectorType": 1,
-    "name": "sklusd_coingecko",
-    "selector": "/html/body/div[5]/div[5]/div[1]/div/div[1]/div[3]/div/div[1]/span[1]/span",
-    "url": "https://www.coingecko.com/en/coins/skale"
-  },
-  {
-    "weight": 1,
-    "power": 2,
     "selectorType": 0,
     "name": "sklusd_coinbase",
     "selector": "data.amount",
