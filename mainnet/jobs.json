@@ -78,5 +78,45 @@
     "name": "ethusd_cryptocompare",
     "selector": "[USD]",
     "url": "https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=USD"
+  },
+  { 
+    "weight": 1,
+    "power": 2,
+    "selectorType": 0,
+    "name": "sklusd_gemini",
+    "selector": "last",
+    "url": "https://api.gemini.com/v1/pubticker/sklusd"
+  },
+  {
+    "weight": 1,
+    "power": 2,
+    "selectorType": 0,
+    "name": "sklusd_kucoin",
+    "selector": "data.SKL",
+    "url": "https://api.kucoin.com/api/v1/prices?base=USD&currencies=SKL"
+  },
+  {
+    "weight": 1,
+    "power": 2,
+    "selectorType": 0,
+    "name": "sklusd_coinbase",
+    "selector": "data.amount",
+    "url": "https://api.coinbase.com/v2/prices/SKL-USD/spot"
+  },
+  {
+    "weight": 1,
+    "power": 2,
+    "selectorType": 0,
+    "name": "sklusd_coingecko_api",
+    "selector": "skale.usd",
+    "url": "https://api.coingecko.com/api/v3/simple/price?ids=skale&vs_currencies=usd"
+  },
+  {
+    "weight": 1,
+    "power": 2,
+    "selectorType": 0,
+    "name": "sklusd_cryptocompare",
+    "selector": "[USD]",
+    "url": "https://min-api.cryptocompare.com/data/price?fsym=SKL&tsyms=USD"
   }
 ]
