@@ -115,9 +115,9 @@
     "weight": 1,
     "power": 5,
     "selectorType": 0,
-    "name": "xrpbusd_binance",
-    "selector": "price",
-    "url": "https://api.binance.com/api/v3/avgPrice?symbol=XRPBUSD"
+    "name": "xrpusd_gemini",
+    "selector": "last",
+    "url": "https://api.gemini.com/v1/pubticker/xrpusd"
   },
   {
     "weight": 1,
