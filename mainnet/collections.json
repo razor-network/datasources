@@ -1,9 +1,16 @@
 [
   {
-    "jobIDs": [1, 2, 3, 5, 6, 7, 10],
+    "jobIDs": [1, 2, 3, 6, 7, 10],
     "aggregationMethod": 2,
     "power": 2,
     "name": "ETHUSD",
+    "tolerance": 500000
+  },
+  {
+    "jobIDs": [11, 12, 13, 14, 15, 16],
+    "aggregationMethod": 2,
+    "power": 2,
+    "name": "BTCUSD",
     "tolerance": 500000
   }
 ]
