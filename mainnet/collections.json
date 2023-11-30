@@ -2,14 +2,14 @@
   {
     "jobIDs": [1, 2, 3, 5, 6, 7, 9, 10],
     "aggregationMethod": 2,
-    "power": 2,
+    "power": 6,
     "name": "ETHUSD",
     "tolerance": 500000
   },
   {
     "jobIDs": [11, 12, 13, 14, 15],
     "aggregationMethod": 2,
-    "power": 2,
+    "power": 6,
     "name": "SKLUSD",
     "tolerance": 500000
   }

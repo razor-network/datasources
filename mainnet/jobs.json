@@ -1,7 +1,7 @@
 [
   {
     "weight": 1,
-    "power": 2,
+    "power": 6,
     "selectorType": 0,
     "name": "ethusd_gemini",
     "selector": "last",
@@ -9,7 +9,7 @@
   },
   {
     "weight": 1,
-    "power": 2,
+    "power": 6,
     "selectorType": 0,
     "name": "ethusd_kucoin",
     "selector": "data.ETH",
@@ -17,7 +17,7 @@
   },
   {
     "weight": 1,
-    "power": 2,
+    "power": 6,
     "selectorType": 0,
     "name": "ethusd_kraken",
     "selector": "result.XETHZUSD.c[0]",
@@ -25,7 +25,7 @@
   },
   {
     "weight": 1,
-    "power": 2,
+    "power": 6,
     "selectorType": 1,
     "name": "ethusd_coingecko",
     "selector": "/html/body/div[5]/div[5]/div[1]/div/div[1]/div[3]/div/div[1]/span[1]/span",
@@ -33,7 +33,7 @@
   },
   {
     "weight": 1,
-    "power": 2,
+    "power": 6,
     "selectorType": 0,
     "name": "ethusd_binance",
     "selector": "price",
@@ -41,7 +41,7 @@
   },
   {
     "weight": 1,
-    "power": 2,
+    "power": 6,
     "selectorType": 0,
     "name": "ethusd_coinbase",
     "selector": "data.amount",
@@ -49,7 +49,7 @@
   },
   {
     "weight": 1,
-    "power": 2,
+    "power": 6,
     "selectorType": 0,
     "name": "ethusd_coingecko_api",
     "selector": "ethereum.usd",
@@ -57,7 +57,7 @@
   },
   {
     "weight": 1,
-    "power": 2,
+    "power": 6,
     "selectorType": 0,
     "name": "ethusd_ftx",
     "selector": "result.price",
@@ -65,7 +65,7 @@
   },
   {
     "weight": 1,
-    "power": 2,
+    "power": 6,
     "selectorType": 0,
     "name": "ethusd_bitfinex",
     "selector": "[0]",
@@ -73,15 +73,15 @@
   },
   {
     "weight": 1,
-    "power": 2,
+    "power": 6,
     "selectorType": 0,
     "name": "ethusd_cryptocompare",
-    "selector": "[USD]",
+    "selector": "USD",
     "url": "https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=USD"
   },
   { 
     "weight": 1,
-    "power": 2,
+    "power": 6,
     "selectorType": 0,
     "name": "sklusd_gemini",
     "selector": "last",
@@ -89,7 +89,7 @@
   },
   {
     "weight": 1,
-    "power": 2,
+    "power": 6,
     "selectorType": 0,
     "name": "sklusd_kucoin",
     "selector": "data.SKL",
@@ -97,7 +97,7 @@
   },
   {
     "weight": 1,
-    "power": 2,
+    "power": 6,
     "selectorType": 0,
     "name": "sklusd_coinbase",
     "selector": "data.amount",
@@ -105,7 +105,7 @@
   },
   {
     "weight": 1,
-    "power": 2,
+    "power": 6,
     "selectorType": 0,
     "name": "sklusd_coingecko_api",
     "selector": "skale.usd",
@@ -113,7 +113,7 @@
   },
   {
     "weight": 1,
-    "power": 2,
+    "power": 6,
     "selectorType": 0,
     "name": "sklusd_cryptocompare",
     "selector": "[USD]",
