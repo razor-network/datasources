@@ -126,5 +126,37 @@
     "name": "btcusd_cryptocompare",
     "selector": "[USD]",
     "url": "https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD"
+  },
+  {
+    "weight": 1,
+    "power": 6,
+    "selectorType": 0,
+    "name": "usdcusd_stablecoin_stats",
+    "selector": "USDC.kraken.USDC_USD.price",
+    "url": "https://stablecoinstats.com/api/tickers"
+  },
+  {
+    "weight": 1,
+    "power": 5,
+    "selectorType": 0,
+    "name": "usdcusd_gemini",
+    "selector": "last",
+    "url": "https://api.gemini.com/v1/pubticker/usdcusd"
+  },
+  {
+    "weight": 1,
+    "power": 5,
+    "selectorType": 0,
+    "name": "usdcusd_coinbase",
+    "selector": "data.amount",
+    "url": "https://api.coinbase.com/v2/prices/USDC-USD/spot"
+  },
+  {
+    "weight": 1,
+    "power": 5,
+    "selectorType": 0,
+    "name": "usdcusd_kraken",
+    "selector": "result.USDCUSD.c[0]",
+    "url": "https://api.kraken.com/0/public/Ticker?pair=USDCUSD"
   }
 ]

@@ -12,5 +12,12 @@
     "power": 2,
     "name": "BTCUSD",
     "tolerance": 500000
+  },
+  {
+    "jobIDs": [17, 18, 19, 20],
+    "aggregationMethod": 2,
+    "power": 5,
+    "name": "USDCUSD",
+    "tolerance": 500000
   }
 ]
