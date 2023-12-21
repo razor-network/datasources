@@ -1,13 +1,13 @@
 [
     {
-      "jobIDs": [1, 2, 3, 5, 6, 7, 8, 9, 17, 24],
+      "jobIDs": [1, 2, 3, 5, 6, 7, 8, 9, 24],
       "aggregationMethod": 2,
       "power": 2,
       "name": "ethCollectionMedian",
       "tolerance": 500000
     },
     {
-      "jobIDs": [10, 11, 58, 59],
+      "jobIDs": [10, 11, 58],
       "aggregationMethod": 2,
       "power": 8,
       "name": "RAZORUSD",
