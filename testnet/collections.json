@@ -1,6 +1,6 @@
 [
     {
-      "jobIDs": [1, 2, 3, 5, 6, 7, 8, 9, 24],
+      "jobIDs": [1, 2, 3, 5, 6, 8, 9, 24],
       "aggregationMethod": 2,
       "power": 2,
       "name": "ethCollectionMedian",
@@ -21,7 +21,7 @@
       "tolerance": 500000
     },
     {
-      "jobIDs": [18, 19, 20, 21, 22, 23],
+      "jobIDs": [18, 19, 20, 21, 23],
       "aggregationMethod": 2,
       "power": 2,
       "name": "BTCUSD",
@@ -70,7 +70,7 @@
       "tolerance": 500000
     },
     {
-      "jobIDs": [52, 53, 54, 56, 57],
+      "jobIDs": [52, 53, 54, 57],
       "aggregationMethod": 2,
       "power": 6,
       "name": "SKALEUSD",
