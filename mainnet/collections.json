@@ -14,7 +14,7 @@
     "tolerance": 500000
   },
   {
-    "jobIDs": [17, 18, 19, 20],
+    "jobIDs": [17, 18, 19, 20, 21],
     "aggregationMethod": 2,
     "power": 5,
     "name": "USDCUSD",

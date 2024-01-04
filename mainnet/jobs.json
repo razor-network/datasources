@@ -158,5 +158,13 @@
     "name": "usdcusd_kraken",
     "selector": "result.USDCUSD.c[0]",
     "url": "https://api.kraken.com/0/public/Ticker?pair=USDCUSD"
+  },
+  {
+    "weight": 1,
+    "power": 5,
+    "selectorType": 0,
+    "name": "usdcusd_bitstamp",
+    "selector": "last",
+    "url": "https://www.bitstamp.net/api/v2/ticker/usdcusd/"
   }
 ]
