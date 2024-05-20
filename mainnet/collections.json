@@ -19,7 +19,7 @@
     "power": 5,
     "name": "USDCUSD",
     "tolerance": 500000
-  }
+  },
   {
     "jobIDs": [22, 23, 24, 25],
     "aggregationMethod": 2,
