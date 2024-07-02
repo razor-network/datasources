@@ -398,5 +398,93 @@
       "name": "razorusdp_uniswap_v2",
       "selector": "result",
       "url": "{\"type\": \"POST\",\"url\": \"https://rpc.ankr.com/eth\",\"body\": {\"jsonrpc\":\"2.0\",\"id\":7269270904970082,\"method\":\"eth_call\",\"params\":[{\"from\":\"0x0000000000000000000000000000000000000000\",\"data\":\"0xd06ca61f0000000000000000000000000000000000000000000000000de0b6b3a76400000000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000200000000000000000000000050de6856358cc35f3a9a57eaaa34bd4cb707d2cd0000000000000000000000008e870d67f660d95d5be530380d0ec0bd388289e1\",\"to\":\"0x7a250d5630b4cf539739df2c5dacb4c659f2488d\"},\"latest\"]},\"header\": {\"content-type\": \"application/json\"}, \"returnType\": \"hexArray[1]\"}"
+    },
+    {
+      "weight": 1,
+      "power": 2,
+      "selectorType": 0,
+      "name": "pricefeed_eth",
+      "selector": "ethCollectionMedian",
+      "url": "https://datafeeds-staging.razorscan.io/prices"
+    },
+    {
+      "weight": 1,
+      "power": 8,
+      "selectorType": 0,
+      "name": "pricefeed_rzr",
+      "selector": "RAZORUSD",
+      "url": "https://datafeeds-staging.razorscan.io/prices"
+    },
+    {
+      "weight": 1,
+      "power": 2,
+      "selectorType": 0,
+      "name": "pricefeed_uft",
+      "selector": "UFTUSD",
+      "url": "https://datafeeds-staging.razorscan.io/prices"
+    },
+    {
+      "weight": 1,
+      "power": 2,
+      "selectorType": 0,
+      "name": "pricefeed_btc",
+      "selector": "BTCUSD",
+      "url": "https://datafeeds-staging.razorscan.io/prices"
+    },
+    {
+      "weight": 1,
+      "power": 5,
+      "selectorType": 0,
+      "name": "pricefeed_usdc",
+      "selector": "USDCUSD",
+      "url": "https://datafeeds-staging.razorscan.io/prices"
+    },
+    {
+      "weight": 1,
+      "power": 5,
+      "selectorType": 0,
+      "name": "pricefeed_usdt",
+      "selector": "USDTUSD",
+      "url": "https://datafeeds-staging.razorscan.io/prices"
+    },
+    {
+      "weight": 1,
+      "power": 4,
+      "selectorType": 0,
+      "name": "pricefeed_matic",
+      "selector": "MATICUSD",
+      "url": "https://datafeeds-staging.razorscan.io/prices"
+    },
+    {
+      "weight": 1,
+      "power": 4,
+      "selectorType": 0,
+      "name": "pricefeed_grt",
+      "selector": "GRTUSD",
+      "url": "https://datafeeds-staging.razorscan.io/prices"
+    },
+    {
+      "weight": 1,
+      "power": 4,
+      "selectorType": 0,
+      "name": "pricefeed_arb",
+      "selector": "ARBUSD",
+      "url": "https://datafeeds-staging.razorscan.io/prices"
+    },
+    {
+      "weight": 1,
+      "power": 4,
+      "selectorType": 0,
+      "name": "pricefeed_sol",
+      "selector": "SOLUSD",
+      "url": "https://datafeeds-staging.razorscan.io/prices"
+    },
+    {
+      "weight": 1,
+      "power": 6,
+      "selectorType": 0,
+      "name": "pricefeed_skale",
+      "selector": "SKALEUSD",
+      "url": "https://datafeeds-staging.razorscan.io/prices"
     }
   ]
