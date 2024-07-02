@@ -35,14 +35,6 @@
       "weight": 1,
       "power": 2,
       "selectorType": 0,
-      "name": "ethusd_binance",
-      "selector": "price",
-      "url": "https://api.binance.com/api/v3/avgPrice?symbol=ETHBUSD"
-    },
-    {
-      "weight": 1,
-      "power": 2,
-      "selectorType": 0,
       "name": "ethusd_coinbase",
       "selector": "data.amount",
       "url": "https://api.coinbase.com/v2/prices/ETH-USD/spot"
@@ -68,40 +60,24 @@
       "power": 2,
       "selectorType": 0,
       "name": "ethusd_cryptocompare",
-      "selector": "[USD]",
+      "selector": "USD",
       "url": "https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=USD"
     },
     {
       "weight": 1,
-      "power": 2,
+      "power": 8,
       "selectorType": 0,
       "name": "razorusd_cryptocompare",
-      "selector": "[USD]",
+      "selector": "USD",
       "url": "https://min-api.cryptocompare.com/data/price?fsym=RAZOR&tsyms=USD"
     },
     {
       "weight": 1,
-      "power": 2,
-      "selectorType": 0,
-      "name": "razorusd_mexc",
-      "selector": "data[0][last]",
-      "url": "https://www.mexc.com/open/api/v2/market/ticker?symbol=RAZOR_USDT"
-    },
-    {
-      "weight": 1,
-      "power": 2,
+      "power": 8,
       "selectorType": 0,
       "name": "razorusd_gateio",
       "selector": "[0].last",
       "url": "https://api.gateio.ws/api/v4/spot/tickers?currency_pair=RAZOR_USDT"
-    },
-    {
-      "weight": 1,
-      "power": 2,
-      "selectorType": 0,
-      "name": "uftusd_mexc",
-      "selector": "data[0][last]",
-      "url": "https://www.mexc.com/open/api/v2/market/ticker?symbol=UFT_USDT"
     },
     {
       "weight": 1,
@@ -116,16 +92,8 @@
       "power": 2,
       "selectorType": 0,
       "name": "uftusd_cryptocompare",
-      "selector": "[USD]",
+      "selector": "USD",
       "url": "https://min-api.cryptocompare.com/data/price?fsym=UFT&tsyms=USD"
-    },
-    {
-      "weight": 1,
-      "power": 2,
-      "selectorType": 0,
-      "name": "uftusd_binance",
-      "selector": "price",
-      "url": "https://api.binance.com/api/v3/avgPrice?symbol=UFTBUSD"
     },
     {
       "weight": 1,
@@ -267,14 +235,6 @@
       "weight": 1,
       "power": 4,
       "selectorType": 0,
-      "name": "maticusd_binance",
-      "selector": "price",
-      "url": "https://api.binance.com/api/v3/avgPrice?symbol=MATICBUSD"
-    },
-    {
-      "weight": 1,
-      "power": 4,
-      "selectorType": 0,
       "name": "maticusd_coinbase",
       "selector": "data.amount",
       "url": "https://api.coinbase.com/v2/prices/MATIC-USD/spot"
@@ -286,14 +246,6 @@
       "name": "maticusd_cryptocompare",
       "selector": "USD",
       "url": "https://min-api.cryptocompare.com/data/price?fsym=MATIC&tsyms=USD"
-    },
-    {
-      "weight": 1,
-      "power": 4,
-      "selectorType": 1,
-      "name": "maticusd_coinmarjetcap_xhtml",
-      "selector": "/html/body/div[1]/div[2]/div/div[2]/div/div/div[2]/div[1]/div[2]/span",
-      "url": "https://coinmarketcap.com/currencies/polygon/"
     },
     {
       "weight": 1,
@@ -338,14 +290,6 @@
     {
       "weight": 1,
       "power": 4,
-      "selectorType": 1,
-      "name": "grtusd_blockworks_xhtml",
-      "selector": "/html/body/div[1]/div/main/div[2]/div[1]/section[2]/div[1]/div/div[1]/div[1]/p",
-      "url": "https://blockworks.co/price/grt"
-    },
-    {
-      "weight": 1,
-      "power": 4,
       "selectorType": 0,
       "name": "arbusd_kucoin",
       "selector": "data.ARB",
@@ -366,14 +310,6 @@
       "name": "arbusd_coinbase",
       "selector": "data.amount",
       "url": "https://api.coinbase.com/v2/prices/ARB-USD/spot"
-    },
-    {
-      "weight": 1,
-      "power": 4,
-      "selectorType": 1,
-      "name": "arb_binance_xhtml",
-      "selector": "/html/body/div[3]/section/div/div[2]/div[4]/div[1]/div[1]",
-      "url": "https://www.binance.com/en-IN/price/arbitrum"
     },
     {
       "weight": 1,
@@ -430,14 +366,6 @@
       "name": "sklusd_coinbase",
       "selector": "data.amount",
       "url": "https://api.coinbase.com/v2/prices/SKL-USD/spot"  
-    },
-    {
-      "weight": 1,
-      "power": 6,
-      "selectorType": 1,
-      "name": "sklusd_binance_xhtml",
-      "selector": "/html/body/div[3]/section/div/div[2]/div[4]/div[1]/div[1]",
-      "url": "https://www.binance.com/en-IN/price/skale-network"
     },
     {
       "weight": 1,
