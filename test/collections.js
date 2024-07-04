@@ -147,27 +147,6 @@ describe("Collections test", () => {
             const { url, name, selectorType, selector } =
               testnetJobsData[ele - 1];
 
-            if (selectorType === 0) {
-              if (url.startsWith("{")) {
-                const { returnType } = parseUrl(url);
-                const res = await fetchCustomURL(url, name);
-                const result = decodeUniswapV2Data(res.data.result, returnType);
-
-                expect(isNaN(result)).to.be.eq(
-                  false,
-                  `Job[${name}] does not have required selector`
-                );
-              } else {
-                const res = await chai.request(url).get("").timeout(10000);
-                const result = _.get(res.body, selector);
-
-                expect(isNaN(result)).to.be.eq(
-                  false,
-                  `Job[${name}] does not have required selector`
-                );
-              }
-            }
-
             //JSON
             if (selectorType === 0) {
               if (url.startsWith("{")) {
