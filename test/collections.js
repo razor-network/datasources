@@ -14,6 +14,7 @@ const {
   fetchCustomURL,
   decodeUniswapV2Data,
 } = require("./utils/request");
+const { sleep } = require("./utils");
 const { JSDOM } = jsdom;
 
 const collectionKeysWithType = {
@@ -96,124 +97,124 @@ describe("Collections test", () => {
   });
 
   it("Collection jobIDs should send OK response ", async () => {
-    await Promise.all(
-      testnetCollectionsData.map(async (col) => {
-        const { jobIDs } = col;
-        jobIDs.every(async (ele) => {
-          let { url, name } = testnetJobsData[ele - 1];
-          if (url.startsWith("{")) {
-            const res = await fetchCustomURL(url, name);
-            expect(res.status).to.be.equal(
-              200,
-              `Testnet Job(${name}) url should send OK response`
-            );
-          } else {
-            const res = await chai.request(url).get("").timeout(10000);
-            expect(res.status).to.be.equal(
-              200,
-              `Testnet Job(${name}) url should send OK response`
-            );
-          }
-        });
-      }),
-      mainnetCollectionsData.map(async (col) => {
-        const { jobIDs } = col;
-        jobIDs.every(async (ele) => {
-          const { url, name } = mainnetCollectionsData[ele - 1];
-          if (url.startsWith("{")) {
-            const res = await fetchCustomURL(url, name);
-            expect(res.status).to.be.equal(
-              200,
-              `Mainnet Job(${name}) url should send OK response`
-            );
-          } else {
-            const res = await chai.request(url).get("").timeout(10000);
-            expect(res.status).to.be.equal(
-              200,
-              `Mainnet Job(${name}) url should send OK response`
-            );
-          }
-        });
-      })
-    );
+    for (const col of testnetCollectionsData) {
+      const { jobIDs } = col;
+      for (const ele of jobIDs) {
+        const { url, name } = testnetJobsData[ele - 1];
+        if (url.startsWith("{")) {
+          const res = await fetchCustomURL(url, name);
+          expect(res.status).to.be.equal(
+            200,
+            `Testnet Job(${name}) url should send OK response`
+          );
+        } else {
+          const res = await chai.request(url).get("").timeout(10000);
+          expect(res.status).to.be.equal(
+            200,
+            `Testnet Job(${name}) url should send OK response`
+          );
+        }
+
+        await sleep(1000);
+      }
+    }
+
+    for (const col of mainnetCollectionsData) {
+      const { jobIDs } = col;
+      for (const ele of jobIDs) {
+        const { url, name } = mainnetJobsData[ele - 1];
+        if (url.startsWith("{")) {
+          const res = await fetchCustomURL(url, name);
+          expect(res.status).to.be.equal(
+            200,
+            `Mainnet Job(${name}) url should send OK response`
+          );
+        } else {
+          const res = await chai.request(url).get("").timeout(10000);
+          expect(res.status).to.be.equal(
+            200,
+            `Mainnet Job(${name}) url should send OK response`
+          );
+        }
+        await sleep(1000);
+      }
+    }
   }).timeout(2 * 60 * 1000);
 
   it("Collection JSON jobIDs should have required selectors ", async () => {
-    await Promise.all(
-      testnetCollectionsData.map(async (col) => {
-        const { jobIDs } = col;
-        await Promise.all(
-          jobIDs.map(async (ele) => {
-            const { url, name, selectorType, selector } =
-              testnetJobsData[ele - 1];
+    for (const col of testnetCollectionsData) {
+      const { jobIDs } = col;
+      for (const ele of jobIDs) {
+        const { url, name, selectorType, selector } = testnetJobsData[ele - 1];
 
-            //JSON
-            if (selectorType === 0) {
-              if (url.startsWith("{")) {
-                const { returnType } = parseUrl(url);
-                const res = await fetchCustomURL(url, name);
-                const result = decodeUniswapV2Data(res.data.result, returnType);
-                expect(isNaN(result)).to.be.eq(
-                  false,
-                  `Testnet Job[${name}] does not have required selector`
-                );
-                testnetTableData.push({
-                  job: name,
-                  result,
-                });
-              } else {
-                const res = await chai.request(url).get("").timeout(10000);
-                const result = _.get(res.body, selector);
-                expect(isNaN(result)).to.be.eq(
-                  false,
-                  `Testnet Job[${name}] does not have required selector`
-                );
-                testnetTableData.push({
-                  job: name,
-                  result,
-                });
-              }
-            }
-          })
-        );
-      }),
-      mainnetCollectionsData.map(async (col) => {
-        const { jobIDs } = col;
-        await Promise.all(
-          jobIDs.map(async (ele) => {
-            const { url, name, selectorType, selector } =
-              mainnetJobsData[ele - 1];
-            //JSON
-            if (selectorType === 0) {
-              if (url.startsWith("{")) {
-                const { returnType } = parseUrl(url);
-                const res = await fetchCustomURL(url, name);
-                const result = decodeUniswapV2Data(res.data.result, returnType);
-                expect(isNaN(result)).to.be.eq(
-                  false,
-                  `Mainnet Job[${name}] does not have required selector`
-                );
-                mainnetTableData.push({
-                  job: name,
-                  result,
-                });
-              } else {
-                const res = await chai.request(url).get("").timeout(10000);
-                const result = _.get(res.body, selector);
-                expect(isNaN(result)).to.be.eq(
-                  false,
-                  `Mainnet Job[${name}] does not have required selector`
-                );
-                mainnetTableData.push({
-                  job: name,
-                  result,
-                });
-              }
-            }
-          })
-        );
-      })
-    );
+        //JSON
+        if (selectorType === 0) {
+          if (url.startsWith("{")) {
+            const { returnType } = parseUrl(url);
+            const res = await fetchCustomURL(url, name);
+            const result = decodeUniswapV2Data(res.data.result, returnType);
+            expect(isNaN(result)).to.be.eq(
+              false,
+              `Testnet Job[${name}] does not have required selector`
+            );
+            testnetTableData.push({
+              job: name,
+              result,
+            });
+          } else {
+            const res = await chai.request(url).get("").timeout(10000);
+            const result = _.get(res.body, selector);
+            expect(isNaN(result)).to.be.eq(
+              false,
+              `Testnet Job[${name}] does not have required selector`
+            );
+            testnetTableData.push({
+              job: name,
+              result,
+            });
+          }
+        }
+
+        await sleep(1000);
+      }
+    }
+
+    for (const col of mainnetCollectionsData) {
+      const { jobIDs } = col;
+      for (const ele of jobIDs) {
+        const { url, name, selectorType, selector } = mainnetJobsData[ele - 1];
+
+        //JSON
+        if (selectorType === 0) {
+          if (url.startsWith("{")) {
+            const { returnType } = parseUrl(url);
+            const res = await fetchCustomURL(url, name);
+            const result = decodeUniswapV2Data(res.data.result, returnType);
+            expect(isNaN(result)).to.be.eq(
+              false,
+              `Mainnet Job[${name}] does not have required selector`
+            );
+            mainnetTableData.push({
+              job: name,
+              result,
+            });
+          } else {
+            const res = await chai.request(url).get("").timeout(10000);
+            const result = _.get(res.body, selector);
+            expect(isNaN(result)).to.be.eq(
+              false,
+              `Mainnet Job[${name}] does not have required selector`
+            );
+            mainnetTableData.push({
+              job: name,
+              result,
+            });
+          }
+        }
+
+        await sleep(1000);
+      }
+    }
   }).timeout(2 * 60 * 1000);
 
   it("Collection XHTML jobIDs should have required selectors ", async () => {
