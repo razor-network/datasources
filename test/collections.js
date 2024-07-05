@@ -13,6 +13,7 @@ const {
   parseUrl,
   fetchCustomURL,
   decodeUniswapV2Data,
+  isUrlOrJson,
 } = require("./utils/request");
 const { sleep, SLEEP_TIME } = require("./utils");
 const { JSDOM } = jsdom;
@@ -101,18 +102,22 @@ describe("Collections test", () => {
       const { jobIDs } = col;
       for (const ele of jobIDs) {
         const { url, name } = testnetJobsData[ele - 1];
-        if (url.startsWith("{")) {
+        // * Check if URL is URL or JSON
+
+        if (isUrlOrJson(url) === "JSON") {
           const res = await fetchCustomURL(url, name);
           expect(res.status).to.be.equal(
             200,
             `Testnet Job(${name}) url should send OK response`
           );
-        } else {
+        } else if (isUrlOrJson(url) === "URL") {
           const res = await chai.request(url).get("").timeout(10000);
           expect(res.status).to.be.equal(
             200,
             `Testnet Job(${name}) url should send OK response`
           );
+        } else {
+          console.error("Invalid URL:", url);
         }
 
         await sleep(SLEEP_TIME);
@@ -123,18 +128,20 @@ describe("Collections test", () => {
       const { jobIDs } = col;
       for (const ele of jobIDs) {
         const { url, name } = mainnetJobsData[ele - 1];
-        if (url.startsWith("{")) {
+        if (isUrlOrJson(url) === "JSON") {
           const res = await fetchCustomURL(url, name);
           expect(res.status).to.be.equal(
             200,
             `Mainnet Job(${name}) url should send OK response`
           );
-        } else {
+        } else if (isUrlOrJson(url) === "URL") {
           const res = await chai.request(url).get("").timeout(10000);
           expect(res.status).to.be.equal(
             200,
             `Mainnet Job(${name}) url should send OK response`
           );
+        } else {
+          console.error("Invalid URL:", url);
         }
         await sleep(SLEEP_TIME);
       }
@@ -149,7 +156,7 @@ describe("Collections test", () => {
 
         //JSON
         if (selectorType === 0) {
-          if (url.startsWith("{")) {
+          if (isUrlOrJson(url) === "JSON") {
             const { returnType } = parseUrl(url);
             const res = await fetchCustomURL(url, name);
             const result = decodeUniswapV2Data(res.data.result, returnType);
@@ -161,7 +168,7 @@ describe("Collections test", () => {
               job: name,
               result,
             });
-          } else {
+          } else if (isUrlOrJson(url) === "URL") {
             const res = await chai.request(url).get("").timeout(10000);
             const result = _.get(res.body, selector);
             expect(isNaN(result)).to.be.eq(
@@ -172,6 +179,8 @@ describe("Collections test", () => {
               job: name,
               result,
             });
+          } else {
+            console.error("Invalid URL:", url);
           }
         }
 
@@ -186,7 +195,7 @@ describe("Collections test", () => {
 
         //JSON
         if (selectorType === 0) {
-          if (url.startsWith("{")) {
+          if (isUrlOrJson(url) === "JSON") {
             const { returnType } = parseUrl(url);
             const res = await fetchCustomURL(url, name);
             const result = decodeUniswapV2Data(res.data.result, returnType);
@@ -198,7 +207,7 @@ describe("Collections test", () => {
               job: name,
               result,
             });
-          } else {
+          } else if (isUrlOrJson(url) === "URL") {
             const res = await chai.request(url).get("").timeout(10000);
             const result = _.get(res.body, selector);
             expect(isNaN(result)).to.be.eq(
@@ -209,6 +218,8 @@ describe("Collections test", () => {
               job: name,
               result,
             });
+          } else {
+            console.error("Invalid URL:", url);
           }
         }
 
