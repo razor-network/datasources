@@ -115,7 +115,7 @@ describe("Collections test", () => {
           );
         }
 
-        await sleep(1000);
+        await sleep(1500);
       }
     }
 
@@ -136,10 +136,10 @@ describe("Collections test", () => {
             `Mainnet Job(${name}) url should send OK response`
           );
         }
-        await sleep(1000);
+        await sleep(1500);
       }
     }
-  }).timeout(2 * 60 * 1000);
+  }).timeout(4 * 60 * 1000);
 
   it("Collection JSON jobIDs should have required selectors ", async () => {
     for (const col of testnetCollectionsData) {
@@ -175,7 +175,7 @@ describe("Collections test", () => {
           }
         }
 
-        await sleep(1000);
+        await sleep(1500);
       }
     }
 
@@ -212,10 +212,10 @@ describe("Collections test", () => {
           }
         }
 
-        await sleep(1000);
+        await sleep(1500);
       }
     }
-  }).timeout(2 * 60 * 1000);
+  }).timeout(4 * 60 * 1000);
 
   it("Collection XHTML jobIDs should have required selectors ", async () => {
     await Promise.all(
