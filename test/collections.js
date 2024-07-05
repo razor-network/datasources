@@ -14,7 +14,7 @@ const {
   fetchCustomURL,
   decodeUniswapV2Data,
 } = require("./utils/request");
-const { sleep } = require("./utils");
+const { sleep, SLEEP_TIME } = require("./utils");
 const { JSDOM } = jsdom;
 
 const collectionKeysWithType = {
@@ -115,7 +115,7 @@ describe("Collections test", () => {
           );
         }
 
-        await sleep(1000);
+        await sleep(SLEEP_TIME);
       }
     }
 
@@ -136,7 +136,7 @@ describe("Collections test", () => {
             `Mainnet Job(${name}) url should send OK response`
           );
         }
-        await sleep(1000);
+        await sleep(SLEEP_TIME);
       }
     }
   }).timeout(4 * 60 * 1000);
@@ -175,7 +175,7 @@ describe("Collections test", () => {
           }
         }
 
-        await sleep(1000);
+        await sleep(SLEEP_TIME);
       }
     }
 
@@ -212,7 +212,7 @@ describe("Collections test", () => {
           }
         }
 
-        await sleep(1000);
+        await sleep(SLEEP_TIME);
       }
     }
   }).timeout(4 * 60 * 1000);

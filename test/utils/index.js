@@ -1,3 +1,5 @@
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-module.exports = { sleep };
+const SLEEP_TIME = 500;
+
+module.exports = { sleep, SLEEP_TIME };
