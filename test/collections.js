@@ -115,7 +115,7 @@ describe("Collections test", () => {
           );
         }
 
-        await sleep(1500);
+        await sleep(1000);
       }
     }
 
@@ -136,7 +136,7 @@ describe("Collections test", () => {
             `Mainnet Job(${name}) url should send OK response`
           );
         }
-        await sleep(1500);
+        await sleep(1000);
       }
     }
   }).timeout(4 * 60 * 1000);
@@ -175,7 +175,7 @@ describe("Collections test", () => {
           }
         }
 
-        await sleep(1500);
+        await sleep(1000);
       }
     }
 
@@ -212,7 +212,7 @@ describe("Collections test", () => {
           }
         }
 
-        await sleep(1500);
+        await sleep(1000);
       }
     }
   }).timeout(4 * 60 * 1000);
