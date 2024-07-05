@@ -1,474 +1,474 @@
 [
-  {
-    "weight": 1,
-    "power": 2,
-    "selectorType": 0,
-    "name": "ethusd_gemini",
-    "selector": "last",
-    "url": "https://api.gemini.com/v1/pubticker/ethusd"
-  },
-  {
-    "weight": 1,
-    "power": 2,
-    "selectorType": 0,
-    "name": "ethusd_kucoin",
-    "selector": "data.ETH",
-    "url": "https://api.kucoin.com/api/v1/prices?base=USD&currencies=ETH"
-  },
-  {
-    "weight": 1,
-    "power": 2,
-    "selectorType": 0,
-    "name": "ethusd_kraken",
-    "selector": "result.XETHZUSD.c[0]",
-    "url": "https://api.kraken.com/0/public/Ticker?pair=ETHUSD"
-  },
-  {
-    "weight": 1,
-    "power": 2,
-    "selectorType": 1,
-    "name": "ethusd_coingecko",
-    "selector": "/html/body/div[5]/div[5]/div[1]/div/div[1]/div[3]/div/div[1]/span[1]/span",
-    "url": "https://www.coingecko.com/en/coins/ethereum"
-  },
-  {
-    "weight": 1,
-    "power": 2,
-    "selectorType": 0,
-    "name": "ethusd_binance",
-    "selector": "price",
-    "url": "https://api.binance.com/api/v3/avgPrice?symbol=ETHBUSD"
-  },
-  {
-    "weight": 1,
-    "power": 2,
-    "selectorType": 0,
-    "name": "ethusd_coinbase",
-    "selector": "data.amount",
-    "url": "https://api.coinbase.com/v2/prices/ETH-USD/spot"
-  },
-  {
-    "weight": 1,
-    "power": 2,
-    "selectorType": 0,
-    "name": "ethusd_coingecko_api",
-    "selector": "ethereum.usd",
-    "url": "https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd"
-  },
-  {
-    "weight": 1,
-    "power": 2,
-    "selectorType": 0,
-    "name": "ethusd_bitfinex",
-    "selector": "[0]",
-    "url": "https://api-pub.bitfinex.com/v2/ticker/tETHUSD"
-  },
-  {
-    "weight": 1,
-    "power": 2,
-    "selectorType": 0,
-    "name": "ethusd_cryptocompare",
-    "selector": "[USD]",
-    "url": "https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=USD"
-  },
-  {
-    "weight": 1,
-    "power": 2,
-    "selectorType": 0,
-    "name": "razorusd_cryptocompare",
-    "selector": "[USD]",
-    "url": "https://min-api.cryptocompare.com/data/price?fsym=RAZOR&tsyms=USD"
-  },
-  {
-    "weight": 1,
-    "power": 2,
-    "selectorType": 0,
-    "name": "razorusd_mexc",
-    "selector": "data[0][last]",
-    "url": "https://www.mexc.com/open/api/v2/market/ticker?symbol=RAZOR_USDT"
-  },
-  {
-    "weight": 1,
-    "power": 2,
-    "selectorType": 0,
-    "name": "razorusd_gateio",
-    "selector": "[0].last",
-    "url": "https://api.gateio.ws/api/v4/spot/tickers?currency_pair=RAZOR_USDT"
-  },
-  {
-    "weight": 1,
-    "power": 2,
-    "selectorType": 0,
-    "name": "uftusd_mexc",
-    "selector": "data[0][last]",
-    "url": "https://www.mexc.com/open/api/v2/market/ticker?symbol=UFT_USDT"
-  },
-  {
-    "weight": 1,
-    "power": 2,
-    "selectorType": 0,
-    "name": "uftusd_gateio",
-    "selector": "[0].last",
-    "url": "https://api.gateio.ws/api/v4/spot/tickers?currency_pair=UFT_USDT"
-  },
-  {
-    "weight": 1,
-    "power": 2,
-    "selectorType": 0,
-    "name": "uftusd_cryptocompare",
-    "selector": "[USD]",
-    "url": "https://min-api.cryptocompare.com/data/price?fsym=UFT&tsyms=USD"
-  },
-  {
-    "weight": 1,
-    "power": 2,
-    "selectorType": 0,
-    "name": "uftusd_binance",
-    "selector": "price",
-    "url": "https://api.binance.com/api/v3/avgPrice?symbol=UFTBUSD"
-  },
-  {
-    "weight": 1,
-    "power": -4,
-    "selectorType": 0,
-    "name": "ethusd_postJob",
-    "selector": "result",
-    "url": "{\"type\": \"POST\",\"url\": \"https://rpc.ankr.com/eth\",\"body\": {\"jsonrpc\":\"2.0\",\"method\":\"eth_call\",\"params\":[{\"to\":\"0xb27308f9f90d607463bb33ea1bebb41c27ce5ab6\",\"data\":\"0xf7729d43000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2000000000000000000000000a0b86991c6218b36c1d19d4a2e9eb0ce3606eb480000000000000000000000000000000000000000000000000000000000000bb80000000000000000000000000000000000000000000000000de0b6b3a76400000000000000000000000000000000000000000000000000000000000000000000\"}],\"id\":5},\"header\": {\"content-type\": \"application/json\"}, \"returnType\": \"hex\"}"
-  },
-  {
-    "weight": 1,
-    "power": 2,
-    "selectorType": 0,
-    "name": "btcusd_gemini",
-    "selector": "last",
-    "url": "https://api.gemini.com/v1/pubticker/btcusd"
-  },
-  {
-    "weight": 1,
-    "power": 2,
-    "selectorType": 0,
-    "name": "btcusd_kucoin",
-    "selector": "data.BTC",
-    "url": "https://api.kucoin.com/api/v1/prices?base=USD&currencies=BTC"
-  },
-  {
-    "weight": 1,
-    "power": 2,
-    "selectorType": 0,
-    "name": "btcusd_kraken",
-    "selector": "result.XXBTZUSD.c[0]",
-    "url": "https://api.kraken.com/0/public/Ticker?pair=BTCUSD"
-  },
-  {
-    "weight": 1,
-    "power": 2,
-    "selectorType": 0,
-    "name": "btcusd_coinbase",
-    "selector": "data.amount",
-    "url": "https://api.coinbase.com/v2/prices/BTC-USD/spot"
-  },
-  {
-    "weight": 1,
-    "power": 2,
-    "selectorType": 0,
-    "name": "btcusd_coingecko_api",
-    "selector": "bitcoin.usd",
-    "url": "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd"
-  },
-  {
-    "weight": 1,
-    "power": 2,
-    "selectorType": 0,
-    "name": "btc_kucoin_common_api",
-    "selector": "data.BTC",
-    "url": "https://api.kucoin.com/api/v1/prices?base=USD&currencies=ETH,BTC"
-  },
-  {
-    "weight": 1,
-    "power": 2,
-    "selectorType": 0,
-    "name": "eth_kucoin_common_api",
-    "selector": "data.ETH",
-    "url": "https://api.kucoin.com/api/v1/prices?base=USD&currencies=ETH,BTC"
-  },
-  {
-    "weight": 1,
-    "power": 5,
-    "selectorType": 0,
-    "name": "usdcusd_gemini",
-    "selector": "last",
-    "url": "https://api.gemini.com/v1/pubticker/usdcusd"
-  },
-  {
-    "weight": 1,
-    "power": 5,
-    "selectorType": 0,
-    "name": "usdcusd_coinbase",
-    "selector": "data.amount",
-    "url": "https://api.coinbase.com/v2/prices/USDC-USD/spot"
-  },
-  {
-    "weight": 1,
-    "power": 5,
-    "selectorType": 0,
-    "name": "usdcusd_kraken",
-    "selector": "result.USDCUSD.c[0]",
-    "url": "https://api.kraken.com/0/public/Ticker?pair=USDCUSD"
-  },
-  {
-    "weight": 1,
-    "power": 5,
-    "selectorType": 0,
-    "name": "usdtusd_gemini",
-    "selector": "last",
-    "url": "https://api.gemini.com/v1/pubticker/usdtusd"
-  },
-  {
-    "weight": 1,
-    "power": 5,
-    "selectorType": 0,
-    "name": "usdtusd_coinbase",
-    "selector": "data.amount",
-    "url": "https://api.coinbase.com/v2/prices/USDT-USD/spot"
-  },
-  {
-    "weight": 1,
-    "power": 5,
-    "selectorType": 0,
-    "name": "usdtusd_kraken",
-    "selector": "result.USDTZUSD.c[0]",
-    "url": "https://api.kraken.com/0/public/Ticker?pair=USDTZUSD"
-  },
-  {
-    "weight": 1,
-    "power": 4,
-    "selectorType": 0,
-    "name": "maticusd_gemini",
-    "selector": "last",
-    "url": "https://api.gemini.com/v1/pubticker/maticusd"
-  },
-  {
-    "weight": 1,
-    "power": 4,
-    "selectorType": 0,
-    "name": "maticusd_kucoin",
-    "selector": "data.MATIC",
-    "url": "https://api.kucoin.com/api/v1/prices?base=USD&currencies=MATIC"
-  },
-  {
-    "weight": 1,
-    "power": 4,
-    "selectorType": 0,
-    "name": "maticusd_kraken",
-    "selector": "result.MATICUSD.c[0]",
-    "url": "https://api.kraken.com/0/public/Ticker?pair=MATICUSD"
-  },
-  {
-    "weight": 1,
-    "power": 4,
-    "selectorType": 0,
-    "name": "maticusd_binance",
-    "selector": "price",
-    "url": "https://api.binance.com/api/v3/avgPrice?symbol=MATICBUSD"
-  },
-  {
-    "weight": 1,
-    "power": 4,
-    "selectorType": 0,
-    "name": "maticusd_coinbase",
-    "selector": "data.amount",
-    "url": "https://api.coinbase.com/v2/prices/MATIC-USD/spot"
-  },
-  {
-    "weight": 1,
-    "power": 4,
-    "selectorType": 0,
-    "name": "maticusd_cryptocompare",
-    "selector": "USD",
-    "url": "https://min-api.cryptocompare.com/data/price?fsym=MATIC&tsyms=USD"
-  },
-  {
-    "weight": 1,
-    "power": 4,
-    "selectorType": 1,
-    "name": "maticusd_coinmarjetcap_xhtml",
-    "selector": "/html/body/div[1]/div[2]/div/div[2]/div/div/div[2]/div[1]/div[2]/span",
-    "url": "https://coinmarketcap.com/currencies/polygon/"
-  },
-  {
-    "weight": 1,
-    "power": 4,
-    "selectorType": 0,
-    "name": "grtusd_gemini",
-    "selector": "last",
-    "url": "https://api.gemini.com/v1/pubticker/grtusd"
-  },
-  {
-    "weight": 1,
-    "power": 4,
-    "selectorType": 0,
-    "name": "grtusd_kucoin",
-    "selector": "data.GRT",
-    "url": "https://api.kucoin.com/api/v1/prices?base=USD&currencies=GRT"
-  },
-  {
-    "weight": 1,
-    "power": 4,
-    "selectorType": 0,
-    "name": "grtusd_kraken",
-    "selector": "result.GRTUSD.c[0]",
-    "url": "https://api.kraken.com/0/public/Ticker?pair=GRTUSD"
-  },
-  {
-    "weight": 1,
-    "power": 4,
-    "selectorType": 0,
-    "name": "grtusd_coinbase",
-    "selector": "data.amount",
-    "url": "https://api.coinbase.com/v2/prices/GRT-USD/spot"
-  },
-  {
-    "weight": 1,
-    "power": 4,
-    "selectorType": 0,
-    "name": "grtusd_cryptocompare",
-    "selector": "USD",
-    "url": "https://min-api.cryptocompare.com/data/price?fsym=GRT&tsyms=USD"
-  },
-  {
-    "weight": 1,
-    "power": 4,
-    "selectorType": 1,
-    "name": "grtusd_blockworks_xhtml",
-    "selector": "/html/body/div[1]/div/main/div[2]/div[1]/section[2]/div[1]/div/div[1]/div[1]/p",
-    "url": "https://blockworks.co/price/grt"
-  },
-  {
-    "weight": 1,
-    "power": 4,
-    "selectorType": 0,
-    "name": "arbusd_kucoin",
-    "selector": "data.ARB",
-    "url": "https://api.kucoin.com/api/v1/prices?base=USD&currencies=ARB"
-  },
-  {
-    "weight": 1,
-    "power": 4,
-    "selectorType": 0,
-    "name": "arbusd_kraken",
-    "selector": "result.ARBUSD.c[0]",
-    "url": "https://api.kraken.com/0/public/Ticker?pair=ARBUSD"
-  },
-  {
-    "weight": 1,
-    "power": 4,
-    "selectorType": 0,
-    "name": "arbusd_coinbase",
-    "selector": "data.amount",
-    "url": "https://api.coinbase.com/v2/prices/ARB-USD/spot"
-  },
-  {
-    "weight": 1,
-    "power": 4,
-    "selectorType": 1,
-    "name": "arb_binance_xhtml",
-    "selector": "/html/body/div[3]/section/div/div[2]/div[4]/div[1]/div[1]",
-    "url": "https://www.binance.com/en-IN/price/arbitrum"
-  },
-  {
-    "weight": 1,
-    "power": 4,
-    "selectorType": 0,
-    "name": "solusd_kucoin",
-    "selector": "data.SOL",
-    "url": "https://api.kucoin.com/api/v1/prices?base=USD&currencies=SOL"
-  },
-  {
-    "weight": 1,
-    "power": 4,
-    "selectorType": 0,
-    "name": "solusd_coinbase",
-    "selector": "data.amount",
-    "url": "https://api.coinbase.com/v2/prices/SOL-USD/spot"
-  },
-  {
-    "weight": 1,
-    "power": 4,
-    "selectorType": 0,
-    "name": "solusd_kraken",
-    "selector": "result.SOLUSD.c[0]",
-    "url": "https://api.kraken.com/0/public/Ticker?pair=SOLUSD"
-  },
-  {
-    "weight": 1,
-    "power": 4,
-    "selectorType": 0,
-    "name": "solusd_gemini",
-    "selector": "last",
-    "url": "https://api.gemini.com/v1/pubticker/solusd"
-  },
-  {
-    "weight": 1,
-    "power": 6,
-    "selectorType": 0,
-    "name": "sklusd_gemini",
-    "selector": "last",
-    "url": "https://api.gemini.com/v1/pubticker/sklusd"
-  },
-  {
-    "weight": 1,
-    "power": 6,
-    "selectorType": 0,
-    "name": "sklusd_kucoin",
-    "selector": "data.SKL",
-    "url": "https://api.kucoin.com/api/v1/prices?base=USD&currencies=SKL"
-  },
-  {
-    "weight": 1,
-    "power": 6,
-    "selectorType": 0,
-    "name": "sklusd_coinbase",
-    "selector": "data.amount",
-    "url": "https://api.coinbase.com/v2/prices/SKL-USD/spot"  
-  },
-  {
-    "weight": 1,
-    "power": 6,
-    "selectorType": 1,
-    "name": "sklusd_binance_xhtml",
-    "selector": "/html/body/div[3]/section/div/div[2]/div[4]/div[1]/div[1]",
-    "url": "https://www.binance.com/en-IN/price/skale-network"
-  },
-  {
-    "weight": 1,
-    "power": 6,
-    "selectorType": 0,
-    "name": "sklusd_coingecko_api",
-    "selector": "skale.usd",
-    "url": "https://api.coingecko.com/api/v3/simple/price?ids=skale&vs_currencies=usd"
-  },
-  {
-    "weight": 1,
-    "power": 6,
-    "selectorType": 0,
-    "name": "sklusd_cryptocompare",
-    "selector": "USD",
-    "url": "https://min-api.cryptocompare.com/data/price?fsym=SKL&tsyms=USD"
-  },
-  {
-    "weight": 1,
-    "power": 8,
-    "selectorType": 0,
-    "name": "razorusd_coinbase",
-    "selector": "data.amount",
-    "url": "https://api.coinbase.com/v2/prices/RAZOR-USD/spot"
-  },
-  {
-    "weight": 1,
-    "power": 8,
-    "selectorType": 0,
-    "name": "razorusdp_uniswap_v2",
-    "selector": "result",
-    "url": "{\"type\": \"POST\",\"url\": \"https://rpc.ankr.com/eth\",\"body\": {\"jsonrpc\":\"2.0\",\"id\":7269270904970082,\"method\":\"eth_call\",\"params\":[{\"from\":\"0x0000000000000000000000000000000000000000\",\"data\":\"0xd06ca61f0000000000000000000000000000000000000000000000000de0b6b3a76400000000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000200000000000000000000000050de6856358cc35f3a9a57eaaa34bd4cb707d2cd0000000000000000000000008e870d67f660d95d5be530380d0ec0bd388289e1\",\"to\":\"0x7a250d5630b4cf539739df2c5dacb4c659f2488d\"},\"latest\"]},\"header\": {\"content-type\": \"application/json\"}, \"returnType\": \"hexArray[1]\"}"
-  }
-]
+    {
+      "weight": 1,
+      "power": 2,
+      "selectorType": 0,
+      "name": "ethusd_gemini",
+      "selector": "last",
+      "url": "https://api.gemini.com/v1/pubticker/ethusd"
+    },
+    {
+      "weight": 1,
+      "power": 2,
+      "selectorType": 0,
+      "name": "ethusd_kucoin",
+      "selector": "data.ETH",
+      "url": "https://api.kucoin.com/api/v1/prices?base=USD&currencies=ETH"
+    },
+    {
+      "weight": 1,
+      "power": 2,
+      "selectorType": 0,
+      "name": "ethusd_kraken",
+      "selector": "result.XETHZUSD.c[0]",
+      "url": "https://api.kraken.com/0/public/Ticker?pair=ETHUSD"
+    },
+    {
+      "weight": 1,
+      "power": 2,
+      "selectorType": 1,
+      "name": "ethusd_coingecko",
+      "selector": "/html/body/div[5]/div[5]/div[1]/div/div[1]/div[3]/div/div[1]/span[1]/span",
+      "url": "https://www.coingecko.com/en/coins/ethereum"
+    },
+    {
+      "weight": 1,
+      "power": 2,
+      "selectorType": 0,
+      "name": "ethusd_binance",
+      "selector": "price",
+      "url": "https://api.binance.com/api/v3/avgPrice?symbol=ETHBUSD"
+    },
+    {
+      "weight": 1,
+      "power": 2,
+      "selectorType": 0,
+      "name": "ethusd_coinbase",
+      "selector": "data.amount",
+      "url": "https://api.coinbase.com/v2/prices/ETH-USD/spot"
+    },
+    {
+      "weight": 1,
+      "power": 2,
+      "selectorType": 0,
+      "name": "ethusd_coingecko_api",
+      "selector": "ethereum.usd",
+      "url": "https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd"
+    },
+    {
+      "weight": 1,
+      "power": 2,
+      "selectorType": 0,
+      "name": "ethusd_bitfinex",
+      "selector": "[0]",
+      "url": "https://api-pub.bitfinex.com/v2/ticker/tETHUSD"
+    },
+    {
+      "weight": 1,
+      "power": 2,
+      "selectorType": 0,
+      "name": "ethusd_cryptocompare",
+      "selector": "[USD]",
+      "url": "https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=USD"
+    },
+    {
+      "weight": 1,
+      "power": 2,
+      "selectorType": 0,
+      "name": "razorusd_cryptocompare",
+      "selector": "[USD]",
+      "url": "https://min-api.cryptocompare.com/data/price?fsym=RAZOR&tsyms=USD"
+    },
+    {
+      "weight": 1,
+      "power": 2,
+      "selectorType": 0,
+      "name": "razorusd_mexc",
+      "selector": "data[0][last]",
+      "url": "https://www.mexc.com/open/api/v2/market/ticker?symbol=RAZOR_USDT"
+    },
+    {
+      "weight": 1,
+      "power": 2,
+      "selectorType": 0,
+      "name": "razorusd_gateio",
+      "selector": "[0].last",
+      "url": "https://api.gateio.ws/api/v4/spot/tickers?currency_pair=RAZOR_USDT"
+    },
+    {
+      "weight": 1,
+      "power": 2,
+      "selectorType": 0,
+      "name": "uftusd_mexc",
+      "selector": "data[0][last]",
+      "url": "https://www.mexc.com/open/api/v2/market/ticker?symbol=UFT_USDT"
+    },
+    {
+      "weight": 1,
+      "power": 2,
+      "selectorType": 0,
+      "name": "uftusd_gateio",
+      "selector": "[0].last",
+      "url": "https://api.gateio.ws/api/v4/spot/tickers?currency_pair=UFT_USDT"
+    },
+    {
+      "weight": 1,
+      "power": 2,
+      "selectorType": 0,
+      "name": "uftusd_cryptocompare",
+      "selector": "[USD]",
+      "url": "https://min-api.cryptocompare.com/data/price?fsym=UFT&tsyms=USD"
+    },
+    {
+      "weight": 1,
+      "power": 2,
+      "selectorType": 0,
+      "name": "uftusd_binance",
+      "selector": "price",
+      "url": "https://api.binance.com/api/v3/avgPrice?symbol=UFTBUSD"
+    },
+    {
+      "weight": 1,
+      "power": -4,
+      "selectorType": 0,
+      "name": "ethusd_postJob",
+      "selector": "result",
+      "url": "{\"type\": \"POST\",\"url\": \"https://rpc.ankr.com/eth\",\"body\": {\"jsonrpc\":\"2.0\",\"method\":\"eth_call\",\"params\":[{\"to\":\"0xb27308f9f90d607463bb33ea1bebb41c27ce5ab6\",\"data\":\"0xf7729d43000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2000000000000000000000000a0b86991c6218b36c1d19d4a2e9eb0ce3606eb480000000000000000000000000000000000000000000000000000000000000bb80000000000000000000000000000000000000000000000000de0b6b3a76400000000000000000000000000000000000000000000000000000000000000000000\"}],\"id\":5},\"header\": {\"content-type\": \"application/json\"}, \"returnType\": \"hex\"}"
+    },
+    {
+      "weight": 1,
+      "power": 2,
+      "selectorType": 0,
+      "name": "btcusd_gemini",
+      "selector": "last",
+      "url": "https://api.gemini.com/v1/pubticker/btcusd"
+    },
+    {
+      "weight": 1,
+      "power": 2,
+      "selectorType": 0,
+      "name": "btcusd_kucoin",
+      "selector": "data.BTC",
+      "url": "https://api.kucoin.com/api/v1/prices?base=USD&currencies=BTC"
+    },
+    {
+      "weight": 1,
+      "power": 2,
+      "selectorType": 0,
+      "name": "btcusd_kraken",
+      "selector": "result.XXBTZUSD.c[0]",
+      "url": "https://api.kraken.com/0/public/Ticker?pair=BTCUSD"
+    },
+    {
+      "weight": 1,
+      "power": 2,
+      "selectorType": 0,
+      "name": "btcusd_coinbase",
+      "selector": "data.amount",
+      "url": "https://api.coinbase.com/v2/prices/BTC-USD/spot"
+    },
+    {
+      "weight": 1,
+      "power": 2,
+      "selectorType": 0,
+      "name": "btcusd_coingecko_api",
+      "selector": "bitcoin.usd",
+      "url": "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd"
+    },
+    {
+      "weight": 1,
+      "power": 2,
+      "selectorType": 0,
+      "name": "btc_kucoin_common_api",
+      "selector": "data.BTC",
+      "url": "https://api.kucoin.com/api/v1/prices?base=USD&currencies=ETH,BTC"
+    },
+    {
+      "weight": 1,
+      "power": 2,
+      "selectorType": 0,
+      "name": "eth_kucoin_common_api",
+      "selector": "data.ETH",
+      "url": "https://api.kucoin.com/api/v1/prices?base=USD&currencies=ETH,BTC"
+    },
+    {
+      "weight": 1,
+      "power": 5,
+      "selectorType": 0,
+      "name": "usdcusd_gemini",
+      "selector": "last",
+      "url": "https://api.gemini.com/v1/pubticker/usdcusd"
+    },
+    {
+      "weight": 1,
+      "power": 5,
+      "selectorType": 0,
+      "name": "usdcusd_coinbase",
+      "selector": "data.amount",
+      "url": "https://api.coinbase.com/v2/prices/USDC-USD/spot"
+    },
+    {
+      "weight": 1,
+      "power": 5,
+      "selectorType": 0,
+      "name": "usdcusd_kraken",
+      "selector": "result.USDCUSD.c[0]",
+      "url": "https://api.kraken.com/0/public/Ticker?pair=USDCUSD"
+    },
+    {
+      "weight": 1,
+      "power": 5,
+      "selectorType": 0,
+      "name": "usdtusd_gemini",
+      "selector": "last",
+      "url": "https://api.gemini.com/v1/pubticker/usdtusd"
+    },
+    {
+      "weight": 1,
+      "power": 5,
+      "selectorType": 0,
+      "name": "usdtusd_coinbase",
+      "selector": "data.amount",
+      "url": "https://api.coinbase.com/v2/prices/USDT-USD/spot"
+    },
+    {
+      "weight": 1,
+      "power": 5,
+      "selectorType": 0,
+      "name": "usdtusd_kraken",
+      "selector": "result.USDTZUSD.c[0]",
+      "url": "https://api.kraken.com/0/public/Ticker?pair=USDTZUSD"
+    },
+    {
+      "weight": 1,
+      "power": 4,
+      "selectorType": 0,
+      "name": "maticusd_gemini",
+      "selector": "last",
+      "url": "https://api.gemini.com/v1/pubticker/maticusd"
+    },
+    {
+      "weight": 1,
+      "power": 4,
+      "selectorType": 0,
+      "name": "maticusd_kucoin",
+      "selector": "data.MATIC",
+      "url": "https://api.kucoin.com/api/v1/prices?base=USD&currencies=MATIC"
+    },
+    {
+      "weight": 1,
+      "power": 4,
+      "selectorType": 0,
+      "name": "maticusd_kraken",
+      "selector": "result.MATICUSD.c[0]",
+      "url": "https://api.kraken.com/0/public/Ticker?pair=MATICUSD"
+    },
+    {
+      "weight": 1,
+      "power": 4,
+      "selectorType": 0,
+      "name": "maticusd_binance",
+      "selector": "price",
+      "url": "https://api.binance.com/api/v3/avgPrice?symbol=MATICBUSD"
+    },
+    {
+      "weight": 1,
+      "power": 4,
+      "selectorType": 0,
+      "name": "maticusd_coinbase",
+      "selector": "data.amount",
+      "url": "https://api.coinbase.com/v2/prices/MATIC-USD/spot"
+    },
+    {
+      "weight": 1,
+      "power": 4,
+      "selectorType": 0,
+      "name": "maticusd_cryptocompare",
+      "selector": "USD",
+      "url": "https://min-api.cryptocompare.com/data/price?fsym=MATIC&tsyms=USD"
+    },
+    {
+      "weight": 1,
+      "power": 4,
+      "selectorType": 1,
+      "name": "maticusd_coinmarjetcap_xhtml",
+      "selector": "/html/body/div[1]/div[2]/div/div[2]/div/div/div[2]/div[1]/div[2]/span",
+      "url": "https://coinmarketcap.com/currencies/polygon/"
+    },
+    {
+      "weight": 1,
+      "power": 4,
+      "selectorType": 0,
+      "name": "grtusd_gemini",
+      "selector": "last",
+      "url": "https://api.gemini.com/v1/pubticker/grtusd"
+    },
+    {
+      "weight": 1,
+      "power": 4,
+      "selectorType": 0,
+      "name": "grtusd_kucoin",
+      "selector": "data.GRT",
+      "url": "https://api.kucoin.com/api/v1/prices?base=USD&currencies=GRT"
+    },
+    {
+      "weight": 1,
+      "power": 4,
+      "selectorType": 0,
+      "name": "grtusd_kraken",
+      "selector": "result.GRTUSD.c[0]",
+      "url": "https://api.kraken.com/0/public/Ticker?pair=GRTUSD"
+    },
+    {
+      "weight": 1,
+      "power": 4,
+      "selectorType": 0,
+      "name": "grtusd_coinbase",
+      "selector": "data.amount",
+      "url": "https://api.coinbase.com/v2/prices/GRT-USD/spot"
+    },
+    {
+      "weight": 1,
+      "power": 4,
+      "selectorType": 0,
+      "name": "grtusd_cryptocompare",
+      "selector": "USD",
+      "url": "https://min-api.cryptocompare.com/data/price?fsym=GRT&tsyms=USD"
+    },
+    {
+      "weight": 1,
+      "power": 4,
+      "selectorType": 1,
+      "name": "grtusd_blockworks_xhtml",
+      "selector": "/html/body/div[1]/div/main/div[2]/div[1]/section[2]/div[1]/div/div[1]/div[1]/p",
+      "url": "https://blockworks.co/price/grt"
+    },
+    {
+      "weight": 1,
+      "power": 4,
+      "selectorType": 0,
+      "name": "arbusd_kucoin",
+      "selector": "data.ARB",
+      "url": "https://api.kucoin.com/api/v1/prices?base=USD&currencies=ARB"
+    },
+    {
+      "weight": 1,
+      "power": 4,
+      "selectorType": 0,
+      "name": "arbusd_kraken",
+      "selector": "result.ARBUSD.c[0]",
+      "url": "https://api.kraken.com/0/public/Ticker?pair=ARBUSD"
+    },
+    {
+      "weight": 1,
+      "power": 4,
+      "selectorType": 0,
+      "name": "arbusd_coinbase",
+      "selector": "data.amount",
+      "url": "https://api.coinbase.com/v2/prices/ARB-USD/spot"
+    },
+    {
+      "weight": 1,
+      "power": 4,
+      "selectorType": 1,
+      "name": "arb_binance_xhtml",
+      "selector": "/html/body/div[3]/section/div/div[2]/div[4]/div[1]/div[1]",
+      "url": "https://www.binance.com/en-IN/price/arbitrum"
+    },
+    {
+      "weight": 1,
+      "power": 4,
+      "selectorType": 0,
+      "name": "solusd_kucoin",
+      "selector": "data.SOL",
+      "url": "https://api.kucoin.com/api/v1/prices?base=USD&currencies=SOL"
+    },
+    {
+      "weight": 1,
+      "power": 4,
+      "selectorType": 0,
+      "name": "solusd_coinbase",
+      "selector": "data.amount",
+      "url": "https://api.coinbase.com/v2/prices/SOL-USD/spot"
+    },
+    {
+      "weight": 1,
+      "power": 4,
+      "selectorType": 0,
+      "name": "solusd_kraken",
+      "selector": "result.SOLUSD.c[0]",
+      "url": "https://api.kraken.com/0/public/Ticker?pair=SOLUSD"
+    },
+    {
+      "weight": 1,
+      "power": 4,
+      "selectorType": 0,
+      "name": "solusd_gemini",
+      "selector": "last",
+      "url": "https://api.gemini.com/v1/pubticker/solusd"
+    },
+    {
+      "weight": 1,
+      "power": 6,
+      "selectorType": 0,
+      "name": "sklusd_gemini",
+      "selector": "last",
+      "url": "https://api.gemini.com/v1/pubticker/sklusd"
+    },
+    {
+      "weight": 1,
+      "power": 6,
+      "selectorType": 0,
+      "name": "sklusd_kucoin",
+      "selector": "data.SKL",
+      "url": "https://api.kucoin.com/api/v1/prices?base=USD&currencies=SKL"
+    },
+    {
+      "weight": 1,
+      "power": 6,
+      "selectorType": 0,
+      "name": "sklusd_coinbase",
+      "selector": "data.amount",
+      "url": "https://api.coinbase.com/v2/prices/SKL-USD/spot"  
+    },
+    {
+      "weight": 1,
+      "power": 6,
+      "selectorType": 1,
+      "name": "sklusd_binance_xhtml",
+      "selector": "/html/body/div[3]/section/div/div[2]/div[4]/div[1]/div[1]",
+      "url": "https://www.binance.com/en-IN/price/skale-network"
+    },
+    {
+      "weight": 1,
+      "power": 6,
+      "selectorType": 0,
+      "name": "sklusd_coingecko_api",
+      "selector": "skale.usd",
+      "url": "https://api.coingecko.com/api/v3/simple/price?ids=skale&vs_currencies=usd"
+    },
+    {
+      "weight": 1,
+      "power": 6,
+      "selectorType": 0,
+      "name": "sklusd_cryptocompare",
+      "selector": "USD",
+      "url": "https://min-api.cryptocompare.com/data/price?fsym=SKL&tsyms=USD"
+    },
+    {
+      "weight": 1,
+      "power": 8,
+      "selectorType": 0,
+      "name": "razorusd_coinbase",
+      "selector": "data.amount",
+      "url": "https://api.coinbase.com/v2/prices/RAZOR-USD/spot"
+    },
+    {
+      "weight": 1,
+      "power": 8,
+      "selectorType": 0,
+      "name": "razorusdp_uniswap_v2",
+      "selector": "result",
+      "url": "{\"type\": \"POST\",\"url\": \"https://rpc.ankr.com/eth\",\"body\": {\"jsonrpc\":\"2.0\",\"id\":7269270904970082,\"method\":\"eth_call\",\"params\":[{\"from\":\"0x0000000000000000000000000000000000000000\",\"data\":\"0xd06ca61f0000000000000000000000000000000000000000000000000de0b6b3a76400000000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000200000000000000000000000050de6856358cc35f3a9a57eaaa34bd4cb707d2cd0000000000000000000000008e870d67f660d95d5be530380d0ec0bd388289e1\",\"to\":\"0x7a250d5630b4cf539739df2c5dacb4c659f2488d\"},\"latest\"]},\"header\": {\"content-type\": \"application/json\"}, \"returnType\": \"hexArray[1]\"}"
+    }
+  ]
