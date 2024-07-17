@@ -198,5 +198,37 @@
   "name": "usdtusd_stablecoin_stats",
   "selector": "USDT.kraken.USDT_USD.price",
   "url": "https://stablecoinstats.com/api/tickers"
-  }
+  },
+  {
+    "weight": 1,
+    "power": 2,
+    "selectorType": 0,
+    "name": "ethusd_razor",
+    "selector": "ETHUSD",
+    "url": "https://datafeeds.razorscan.io/prices"
+},
+{
+    "weight": 1,
+    "power": 2,
+    "selectorType": 0,
+    "name": "btcusd_razor",
+    "selector": "BTCUSD",
+    "url": "https://datafeeds.razorscan.io/prices"
+},
+{
+    "weight": 1,
+    "power": 5,
+    "selectorType": 0,
+    "name": "usdcusd_razor",
+    "selector": "USDCUSD",
+    "url": "https://datafeeds.razorscan.io/prices"
+},
+{
+    "weight": 1,
+    "power": 5,
+    "selectorType": 0,
+    "name": "usdtusd_razor",
+    "selector": "USDTUSD",
+    "url": "https://datafeeds.razorscan.io/prices"
+}
 ]
