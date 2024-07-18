@@ -39,7 +39,7 @@ const weiToEther = (weiValue) => {
 
 const decodeUniswapV2Data = (data, returnType) => {
   // Check if data can be converted into a number
-  if (!isNaN(Number(data))) {
+  if (typeof data === "number") {
     return Number(data);
   }
 
