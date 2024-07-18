@@ -39,7 +39,7 @@ const weiToEther = (weiValue) => {
 
 const decodeUniswapV2Data = (data, returnType) => {
   // Check if data can be converted into a number
-  if (!isNaN(Number(data))) {
+  if (typeof data === "number") {
     return Number(data);
   }
 
@@ -48,7 +48,7 @@ const decodeUniswapV2Data = (data, returnType) => {
     if (returnType === "hex") {
       // Convert hex to number and return
       return Number(data);
-    } else if (returnType === "hexArray") {
+    } else if (returnType.startsWith("hexArray")) {
       const match = returnType.match(/\[(\d+)\]/);
       const index = match ? parseInt(match[1], 10) : null;
       if (index !== null) {
