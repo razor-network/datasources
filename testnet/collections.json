@@ -42,7 +42,7 @@
       "tolerance": 500000
     },
     {
-      "jobIDs": [31, 32, 33, 34, 35, 36],
+      "jobIDs": [31, 32, 34, 35, 36],
       "aggregationMethod": 2,
       "power": 4,
       "name": "MATICUSD",

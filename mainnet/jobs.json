@@ -26,22 +26,6 @@
   {
     "weight": 1,
     "power": 2,
-    "selectorType": 1,
-    "name": "ethusd_coingecko",
-    "selector": "/html/body/div[5]/div[5]/div[1]/div/div[1]/div[3]/div/div[1]/span[1]/span",
-    "url": "https://www.coingecko.com/en/coins/ethereum"
-  },
-  {
-    "weight": 1,
-    "power": 2,
-    "selectorType": 0,
-    "name": "ethusd_binance",
-    "selector": "price",
-    "url": "https://api.binance.com/api/v3/avgPrice?symbol=ETHBUSD"
-  },
-  {
-    "weight": 1,
-    "power": 2,
     "selectorType": 0,
     "name": "ethusd_coinbase",
     "selector": "data.amount",
@@ -59,14 +43,6 @@
     "weight": 1,
     "power": 2,
     "selectorType": 0,
-    "name": "ethusd_ftx",
-    "selector": "result.price",
-    "url": "https://ftx.com/api/markets/ETH/USD"
-  },
-  {
-    "weight": 1,
-    "power": 2,
-    "selectorType": 0,
     "name": "ethusd_bitfinex",
     "selector": "[0]",
     "url": "https://api-pub.bitfinex.com/v2/ticker/tETHUSD"
@@ -79,6 +55,14 @@
     "selector": "[USD]",
     "url": "https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=USD"
   },
+  {
+    "weight": 1,
+    "power": 2,
+    "selectorType": 0,
+    "name": "ethusd_razor",
+    "selector": "ETHUSD",
+    "url": "https://datafeeds.razorscan.io/prices"
+},
   {
     "weight": 1,
     "power": 2,
@@ -129,6 +113,14 @@
   },
   {
     "weight": 1,
+    "power": 2,
+    "selectorType": 0,
+    "name": "btcusd_razor",
+    "selector": "BTCUSD",
+    "url": "https://datafeeds.razorscan.io/prices"
+},
+  {
+    "weight": 1,
     "power": 5,
     "selectorType": 0,
     "name": "usdcusd_stablecoin_stats",
@@ -171,6 +163,14 @@
     "weight": 1,
     "power": 5,
     "selectorType": 0,
+    "name": "usdcusd_razor",
+    "selector": "USDCUSD",
+    "url": "https://datafeeds.razorscan.io/prices"
+},
+  {
+    "weight": 1,
+    "power": 5,
+    "selectorType": 0,
     "name": "usdtusd_gemini",
     "selector": "last",
     "url": "https://api.gemini.com/v1/pubticker/usdtusd"
@@ -198,5 +198,21 @@
   "name": "usdtusd_stablecoin_stats",
   "selector": "USDT.kraken.USDT_USD.price",
   "url": "https://stablecoinstats.com/api/tickers"
-  }
+  },
+  {
+    "weight": 1,
+    "power": 5,
+    "selectorType": 0,
+    "name": "usdtusd_bitstamp",
+    "selector": "last",
+    "url": "https://www.bitstamp.net/api/v2/ticker/usdtusd/"
+  },
+  {
+    "weight": 1,
+    "power": 5,
+    "selectorType": 0,
+    "name": "usdtusd_razor",
+    "selector": "USDTUSD",
+    "url": "https://datafeeds.razorscan.io/prices"
+}
 ]
