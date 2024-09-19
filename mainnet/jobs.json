@@ -44,8 +44,8 @@
     "power": 2,
     "selectorType": 0,
     "name": "ethusd_bitfinex",
-    "selector": "[0]",
-    "url": "https://api-pub.bitfinex.com/v2/ticker/tETHUSD"
+    "selector": "last_price",
+    "url": "https://api.bitfinex.com/v1/pubticker/ethusd"
   },
   {
     "weight": 1,
