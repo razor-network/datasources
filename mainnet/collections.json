@@ -1,27 +1,27 @@
 [
   {
-    "jobIDs": [1, 2, 3, 6, 7, 9, 10],
+    "jobIDs": [1, 2, 3, 6, 7, 9, 10, 26],
     "aggregationMethod": 2,
     "power": 2,
     "name": "ETHUSD",
     "tolerance": 500000
   },
   {
-    "jobIDs": [11, 12, 13, 14, 15, 16],
+    "jobIDs": [11, 12, 13, 14, 15, 16, 27],
     "aggregationMethod": 2,
     "power": 2,
     "name": "BTCUSD",
     "tolerance": 500000
   },
   {
-    "jobIDs": [17, 18, 19, 20, 21],
+    "jobIDs": [17, 18, 19, 20, 21, 28],
     "aggregationMethod": 2,
     "power": 5,
     "name": "USDCUSD",
     "tolerance": 500000
   },
   {
-    "jobIDs": [22, 23, 24, 25],
+    "jobIDs": [22, 23, 24, 25, 29],
     "aggregationMethod": 2,
     "power": 5,
     "name": "USDTUSD",
