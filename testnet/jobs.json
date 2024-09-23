@@ -62,7 +62,7 @@
       "name": "ethusd_razor",
       "selector": "ETHUSD",
       "url": "https://datafeeds.razorscan.io/prices"
-  },
+    },
     {
       "weight": 1,
       "power": 2,
@@ -118,7 +118,7 @@
       "name": "btcusd_razor",
       "selector": "BTCUSD",
       "url": "https://datafeeds.razorscan.io/prices"
-  },
+    },
     {
       "weight": 1,
       "power": 5,
@@ -166,7 +166,7 @@
       "name": "usdcusd_razor",
       "selector": "USDCUSD",
       "url": "https://datafeeds.razorscan.io/prices"
-  },
+    },
     {
       "weight": 1,
       "power": 5,
@@ -192,12 +192,12 @@
       "url": "https://api.kraken.com/0/public/Ticker?pair=USDTZUSD"
     },
     {
-    "weight": 1,
-    "power": 5,
-    "selectorType": 0,
-    "name": "usdtusd_stablecoin_stats",
-    "selector": "USDT.kraken.USDT_USD.price",
-    "url": "https://stablecoinstats.com/api/tickers"
+      "weight": 1,
+      "power": 5,
+      "selectorType": 0,
+      "name": "usdtusd_stablecoin_stats",
+      "selector": "USDT.kraken.USDT_USD.price",
+      "url": "https://stablecoinstats.com/api/tickers"
     },
     {
       "weight": 1,
@@ -214,6 +214,5 @@
       "name": "usdtusd_razor",
       "selector": "USDTUSD",
       "url": "https://datafeeds.razorscan.io/prices"
-  }
-  ]
-  
+    }
+]
