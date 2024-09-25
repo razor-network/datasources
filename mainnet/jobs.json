@@ -1,202 +1,218 @@
 [
-  {
-    "weight": 1,
-    "power": 2,
-    "selectorType": 0,
-    "name": "ethusd_gemini",
-    "selector": "last",
-    "url": "https://api.gemini.com/v1/pubticker/ethusd"
-  },
-  {
-    "weight": 1,
-    "power": 2,
-    "selectorType": 0,
-    "name": "ethusd_kucoin",
-    "selector": "data.ETH",
-    "url": "https://api.kucoin.com/api/v1/prices?base=USD&currencies=ETH"
-  },
-  {
-    "weight": 1,
-    "power": 2,
-    "selectorType": 0,
-    "name": "ethusd_kraken",
-    "selector": "result.XETHZUSD.c[0]",
-    "url": "https://api.kraken.com/0/public/Ticker?pair=ETHUSD"
-  },
-  {
-    "weight": 1,
-    "power": 2,
-    "selectorType": 1,
-    "name": "ethusd_coingecko",
-    "selector": "/html/body/div[5]/div[5]/div[1]/div/div[1]/div[3]/div/div[1]/span[1]/span",
-    "url": "https://www.coingecko.com/en/coins/ethereum"
-  },
-  {
-    "weight": 1,
-    "power": 2,
-    "selectorType": 0,
-    "name": "ethusd_binance",
-    "selector": "price",
-    "url": "https://api.binance.com/api/v3/avgPrice?symbol=ETHBUSD"
-  },
-  {
-    "weight": 1,
-    "power": 2,
-    "selectorType": 0,
-    "name": "ethusd_coinbase",
-    "selector": "data.amount",
-    "url": "https://api.coinbase.com/v2/prices/ETH-USD/spot"
-  },
-  {
-    "weight": 1,
-    "power": 2,
-    "selectorType": 0,
-    "name": "ethusd_coingecko_api",
-    "selector": "ethereum.usd",
-    "url": "https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd"
-  },
-  {
-    "weight": 1,
-    "power": 2,
-    "selectorType": 0,
-    "name": "ethusd_ftx",
-    "selector": "result.price",
-    "url": "https://ftx.com/api/markets/ETH/USD"
-  },
-  {
-    "weight": 1,
-    "power": 2,
-    "selectorType": 0,
-    "name": "ethusd_bitfinex",
-    "selector": "[0]",
-    "url": "https://api-pub.bitfinex.com/v2/ticker/tETHUSD"
-  },
-  {
-    "weight": 1,
-    "power": 2,
-    "selectorType": 0,
-    "name": "ethusd_cryptocompare",
-    "selector": "[USD]",
-    "url": "https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=USD"
-  },
-  {
-    "weight": 1,
-    "power": 2,
-    "selectorType": 0,
-    "name": "btcusd_gemini",
-    "selector": "last",
-    "url": "https://api.gemini.com/v1/pubticker/btcusd"
-  },
-  {
-    "weight": 1,
-    "power": 2,
-    "selectorType": 0,
-    "name": "btcusd_kucoin",
-    "selector": "data.BTC",
-    "url": "https://api.kucoin.com/api/v1/prices?base=USD&currencies=BTC"
-  },
-  {
-    "weight": 1,
-    "power": 2,
-    "selectorType": 0,
-    "name": "btcusd_kraken",
-    "selector": "result.XXBTZUSD.c[0]",
-    "url": "https://api.kraken.com/0/public/Ticker?pair=BTCUSD"
-  },
-  {
-    "weight": 1,
-    "power": 2,
-    "selectorType": 0,
-    "name": "btcusd_coinbase",
-    "selector": "data.amount",
-    "url": "https://api.coinbase.com/v2/prices/BTC-USD/spot"
-  },
-  {
-    "weight": 1,
-    "power": 2,
-    "selectorType": 0,
-    "name": "btcusd_coingecko_api",
-    "selector": "bitcoin.usd",
-    "url": "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd"
-  },
-  {
-    "weight": 1,
-    "power": 2,
-    "selectorType": 0,
-    "name": "btcusd_cryptocompare",
-    "selector": "[USD]",
-    "url": "https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD"
-  },
-  {
-    "weight": 1,
-    "power": 5,
-    "selectorType": 0,
-    "name": "usdcusd_stablecoin_stats",
-    "selector": "USDC.kraken.USDC_USD.price",
-    "url": "https://stablecoinstats.com/api/tickers"
-  },
-  {
-    "weight": 1,
-    "power": 5,
-    "selectorType": 0,
-    "name": "usdcusd_gemini",
-    "selector": "last",
-    "url": "https://api.gemini.com/v1/pubticker/usdcusd"
-  },
-  {
-    "weight": 1,
-    "power": 5,
-    "selectorType": 0,
-    "name": "usdcusd_coinbase",
-    "selector": "data.amount",
-    "url": "https://api.coinbase.com/v2/prices/USDC-USD/spot"
-  },
-  {
-    "weight": 1,
-    "power": 5,
-    "selectorType": 0,
-    "name": "usdcusd_kraken",
-    "selector": "result.USDCUSD.c[0]",
-    "url": "https://api.kraken.com/0/public/Ticker?pair=USDCUSD"
-  },
-  {
-    "weight": 1,
-    "power": 5,
-    "selectorType": 0,
-    "name": "usdcusd_bitstamp",
-    "selector": "last",
-    "url": "https://www.bitstamp.net/api/v2/ticker/usdcusd/"
-  },
-  {
-    "weight": 1,
-    "power": 5,
-    "selectorType": 0,
-    "name": "usdtusd_gemini",
-    "selector": "last",
-    "url": "https://api.gemini.com/v1/pubticker/usdtusd"
-  },
-  {
-    "weight": 1,
-    "power": 5,
-    "selectorType": 0,
-    "name": "usdtusd_coinbase",
-    "selector": "data.amount",
-    "url": "https://api.coinbase.com/v2/prices/USDT-USD/spot"
-  },
-  {
-    "weight": 1,
-    "power": 5,
-    "selectorType": 0,
-    "name": "usdtusd_kraken",
-    "selector": "result.USDTZUSD.c[0]",
-    "url": "https://api.kraken.com/0/public/Ticker?pair=USDTZUSD"
-  },
-  {
-  "weight": 1,
-  "power": 5,
-  "selectorType": 0,
-  "name": "usdtusd_stablecoin_stats",
-  "selector": "USDT.kraken.USDT_USD.price",
-  "url": "https://stablecoinstats.com/api/tickers"
-  }
+    {
+      "weight": 1,
+      "power": 2,
+      "selectorType": 0,
+      "name": "ethusd_gemini",
+      "selector": "last",
+      "url": "https://api.gemini.com/v1/pubticker/ethusd"
+    },
+    {
+      "weight": 1,
+      "power": 2,
+      "selectorType": 0,
+      "name": "ethusd_kucoin",
+      "selector": "data.ETH",
+      "url": "https://api.kucoin.com/api/v1/prices?base=USD&currencies=ETH"
+    },
+    {
+      "weight": 1,
+      "power": 2,
+      "selectorType": 0,
+      "name": "ethusd_kraken",
+      "selector": "result.XETHZUSD.c[0]",
+      "url": "https://api.kraken.com/0/public/Ticker?pair=ETHUSD"
+    },
+    {
+      "weight": 1,
+      "power": 2,
+      "selectorType": 0,
+      "name": "ethusd_coinbase",
+      "selector": "data.amount",
+      "url": "https://api.coinbase.com/v2/prices/ETH-USD/spot"
+    },
+    {
+      "weight": 1,
+      "power": 2,
+      "selectorType": 0,
+      "name": "ethusd_coingecko_api",
+      "selector": "ethereum.usd",
+      "url": "https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd"
+    },
+    {
+      "weight": 1,
+      "power": 2,
+      "selectorType": 0,
+      "name": "ethusd_bitfinex",
+      "selector": "last_price",
+      "url": "https://api.bitfinex.com/v1/pubticker/ethusd"
+    },
+    {
+      "weight": 1,
+      "power": 2,
+      "selectorType": 0,
+      "name": "ethusd_cryptocompare",
+      "selector": "USD",
+      "url": "https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=USD"
+    },
+    {
+      "weight": 1,
+      "power": 2,
+      "selectorType": 0,
+      "name": "ethusd_razor",
+      "selector": "ETHUSD",
+      "url": "https://datafeeds.razorscan.io/prices"
+    },
+    {
+      "weight": 1,
+      "power": 2,
+      "selectorType": 0,
+      "name": "btcusd_gemini",
+      "selector": "last",
+      "url": "https://api.gemini.com/v1/pubticker/btcusd"
+    },
+    {
+      "weight": 1,
+      "power": 2,
+      "selectorType": 0,
+      "name": "btcusd_kucoin",
+      "selector": "data.BTC",
+      "url": "https://api.kucoin.com/api/v1/prices?base=USD&currencies=BTC"
+    },
+    {
+      "weight": 1,
+      "power": 2,
+      "selectorType": 0,
+      "name": "btcusd_kraken",
+      "selector": "result.XXBTZUSD.c[0]",
+      "url": "https://api.kraken.com/0/public/Ticker?pair=BTCUSD"
+    },
+    {
+      "weight": 1,
+      "power": 2,
+      "selectorType": 0,
+      "name": "btcusd_coinbase",
+      "selector": "data.amount",
+      "url": "https://api.coinbase.com/v2/prices/BTC-USD/spot"
+    },
+    {
+      "weight": 1,
+      "power": 2,
+      "selectorType": 0,
+      "name": "btcusd_coingecko_api",
+      "selector": "bitcoin.usd",
+      "url": "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd"
+    },
+    {
+      "weight": 1,
+      "power": 2,
+      "selectorType": 0,
+      "name": "btcusd_cryptocompare",
+      "selector": "USD",
+      "url": "https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD"
+    },
+    {
+      "weight": 1,
+      "power": 2,
+      "selectorType": 0,
+      "name": "btcusd_razor",
+      "selector": "BTCUSD",
+      "url": "https://datafeeds.razorscan.io/prices"
+    },
+    {
+      "weight": 1,
+      "power": 5,
+      "selectorType": 0,
+      "name": "usdcusd_stablecoin_stats",
+      "selector": "USDC.kraken.USDC_USD.price",
+      "url": "https://stablecoinstats.com/api/tickers"
+    },
+    {
+      "weight": 1,
+      "power": 5,
+      "selectorType": 0,
+      "name": "usdcusd_gemini",
+      "selector": "last",
+      "url": "https://api.gemini.com/v1/pubticker/usdcusd"
+    },
+    {
+      "weight": 1,
+      "power": 5,
+      "selectorType": 0,
+      "name": "usdcusd_coinbase",
+      "selector": "data.amount",
+      "url": "https://api.coinbase.com/v2/prices/USDC-USD/spot"
+    },
+    {
+      "weight": 1,
+      "power": 5,
+      "selectorType": 0,
+      "name": "usdcusd_kraken",
+      "selector": "result.USDCUSD.c[0]",
+      "url": "https://api.kraken.com/0/public/Ticker?pair=USDCUSD"
+    },
+    {
+      "weight": 1,
+      "power": 5,
+      "selectorType": 0,
+      "name": "usdcusd_bitstamp",
+      "selector": "last",
+      "url": "https://www.bitstamp.net/api/v2/ticker/usdcusd/"
+    },
+    {
+      "weight": 1,
+      "power": 5,
+      "selectorType": 0,
+      "name": "usdcusd_razor",
+      "selector": "USDCUSD",
+      "url": "https://datafeeds.razorscan.io/prices"
+    },
+    {
+      "weight": 1,
+      "power": 5,
+      "selectorType": 0,
+      "name": "usdtusd_gemini",
+      "selector": "last",
+      "url": "https://api.gemini.com/v1/pubticker/usdtusd"
+    },
+    {
+      "weight": 1,
+      "power": 5,
+      "selectorType": 0,
+      "name": "usdtusd_coinbase",
+      "selector": "data.amount",
+      "url": "https://api.coinbase.com/v2/prices/USDT-USD/spot"
+    },
+    {
+      "weight": 1,
+      "power": 5,
+      "selectorType": 0,
+      "name": "usdtusd_kraken",
+      "selector": "result.USDTZUSD.c[0]",
+      "url": "https://api.kraken.com/0/public/Ticker?pair=USDTZUSD"
+    },
+    {
+      "weight": 1,
+      "power": 5,
+      "selectorType": 0,
+      "name": "usdtusd_stablecoin_stats",
+      "selector": "USDT.kraken.USDT_USD.price",
+      "url": "https://stablecoinstats.com/api/tickers"
+    },
+    {
+      "weight": 1,
+      "power": 5,
+      "selectorType": 0,
+      "name": "usdtusd_bitstamp",
+      "selector": "last",
+      "url": "https://www.bitstamp.net/api/v2/ticker/usdtusd/"
+    },
+    {
+      "weight": 1,
+      "power": 5,
+      "selectorType": 0,
+      "name": "usdtusd_razor",
+      "selector": "USDTUSD",
+      "url": "https://datafeeds.razorscan.io/prices"
+    }
 ]
