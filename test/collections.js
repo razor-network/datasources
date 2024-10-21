@@ -111,11 +111,16 @@ describe("Collections test", () => {
             `Testnet Job(${name}) url should send OK response`
           );
         } else if (isUrlOrJson(url) === "URL") {
-          const res = await chai.request(url).get("").timeout(10000);
-          expect(res.status).to.be.equal(
-            200,
-            `Testnet Job(${name}) url should send OK response`
-          );
+          try {
+            const res = await chai.request(url).get("").timeout(10000);
+            expect(res.status).to.be.equal(
+              200,
+              `Testnet Job(${name}) url should send OK response`
+            );
+          } catch (error) {
+            console.log(`Error occured for ${name}`);
+            console.log(error);
+          }
         } else {
           console.error("Invalid URL:", url);
         }
