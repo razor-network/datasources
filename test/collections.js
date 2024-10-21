@@ -113,7 +113,6 @@ describe("Collections test", () => {
         } else if (isUrlOrJson(url) === "URL") {
           try {
             const res = await chai.request(url).get("").timeout(10000);
-            console.log({ res });
             expect(res.status).to.be.equal(
               200,
               `Testnet Job(${name}) url should send OK response`
